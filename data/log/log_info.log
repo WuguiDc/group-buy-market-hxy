@@ -1,0 +1,16 @@
+26-10-13.21:46:45.040 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 16216 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
+26-10-13.21:46:45.040 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-13.21:46:46.666 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 1.909 seconds (JVM running for 2.551)
+26-10-13.21:46:46.921 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-13.21:46:52.288 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-13.21:47:01.917 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-13.21:47:01.934 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-13.21:48:05.088 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 35464 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
+26-10-13.21:48:05.088 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-13.21:48:06.575 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 1.768 seconds (JVM running for 2.483)
+26-10-13.21:48:06.781 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-13.21:48:12.059 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-13.21:48:12.254 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-13.21:48:12.254 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:null
+26-10-13.21:48:12.290 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-13.21:48:12.320 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
