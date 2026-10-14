@@ -7,10 +7,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.function.BiConsumer;
 
 @Slf4j
 @Service("ZJ")
 public class ZJCalculateService extends AbstractDiscountCalculateService {
+
     @Override
     protected BigDecimal doCalculate(BigDecimal originalPrice, GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount) {
 

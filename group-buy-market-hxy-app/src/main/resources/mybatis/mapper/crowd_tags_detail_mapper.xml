@@ -10,9 +10,10 @@
         <result column="update_time" property="updateTime"/>
     </resultMap>
 
-    <insert id="addCrowdTagsUserId" parameterType="com.hxy.infrastructure.dao.po.CrowdTagsDetail">
+    <insert id="addCrowdTagsUserId"
+            parameterType="com.hxy.infrastructure.dao.po.CrowdTagsDetail">
         insert into crowd_tags_detail(tag_id, user_id, create_time, update_time)
         values (#{tagId}, #{userId}, now(), now())
+            on duplicate key update update_time = now()
     </insert>
-
 </mapper>
