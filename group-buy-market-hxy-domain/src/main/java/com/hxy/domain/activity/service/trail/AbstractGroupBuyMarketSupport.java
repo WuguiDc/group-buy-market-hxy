@@ -1,6 +1,8 @@
 package com.hxy.domain.activity.service.trail;
 
 import com.hxy.domain.activity.adapter.repository.IActivityRepository;
+import com.hxy.domain.activity.model.entity.MarketProductEntity;
+import com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory;
 import com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter;
 import com.hxy.types.design.framework.tree.AbstractStrategyRouter;
 
@@ -8,15 +10,20 @@ import javax.annotation.Resource;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeoutException;
 
-public abstract class AbstractGroupBuyMarketSupport<MarketProductEntity,DynamicContext,TrialBalanceEntity> extends AbstractMultiThreadStrategyRouter<MarketProductEntity,DynamicContext,TrialBalanceEntity> {
+public abstract class AbstractGroupBuyMarketSupport<MarketProductEntity,DynamicContext,TrialBalanceEntity> extends AbstractMultiThreadStrategyRouter<
+        com.hxy.domain.activity.model.entity.MarketProductEntity,
+        DefaultActivityStrategyFactory.DynamicContext,
+        com.hxy.domain.activity.model.entity.TrialBalanceEntity>{
 
     protected long timeout = 500;
 
     @Resource
     protected IActivityRepository repository;
 
-    @Override
-    protected void mutiThread(MarketProductEntity requestParameter, DynamicContext dynamicContext) throws ExecutionException, InterruptedException, TimeoutException {
 
+
+    @Override
+    protected void multiThread(com.hxy.domain.activity.model.entity.MarketProductEntity requestParameter, DefaultActivityStrategyFactory.DynamicContext dynamicContext) throws ExecutionException, InterruptedException, TimeoutException {
+        // 缺省的方法
     }
 }

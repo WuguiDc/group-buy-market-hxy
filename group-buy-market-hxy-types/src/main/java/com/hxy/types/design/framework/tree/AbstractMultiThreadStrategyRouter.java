@@ -19,13 +19,16 @@ public abstract class AbstractMultiThreadStrategyRouter<T,D,R> implements Strate
 
     @Override
     public R apply(T requestParameter, D dynamicContext) throws Exception {
-        mutiThread(requestParameter,dynamicContext);
-        return doApply(requestParameter,dynamicContext);
+        // 异步加载数据
+        multiThread(requestParameter, dynamicContext);
+        // 业务流程受理
+        return doApply(requestParameter, dynamicContext);
     }
 
     protected abstract R doApply(T requestParameter, D dynamicContext) throws  Exception;
 
-    protected abstract void mutiThread(T requestParameter, D dynamicContext) throws ExecutionException, InterruptedException, TimeoutException;
+
+    protected abstract void multiThread(T requestParameter, D dynamicContext) throws ExecutionException, InterruptedException, TimeoutException;
 
 
 }

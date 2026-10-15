@@ -12,6 +12,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
+
 @Component
 public class DefaultActivityStrategyFactory {
 
@@ -33,6 +35,8 @@ public class DefaultActivityStrategyFactory {
 
         private GroupBuyActivityDiscountVO groupBuyActivityDiscountVO;
         private SkuVO skuVO;
+
+        private BigDecimal deductionPrice;
 
     }
 }
