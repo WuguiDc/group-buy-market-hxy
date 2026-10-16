@@ -22,10 +22,13 @@ public enum DiscountTypeEnum {
     private String info;
 
     public static DiscountTypeEnum get(Integer code) {
-        switch (code){
-            case 0:return BASE;
-            case 1:return TAG;
-            default:throw  new RuntimeException("err code!");
+        switch (code) {
+            case 0:
+                return BASE;
+            case 1:
+                return TAG;
+            default:
+                throw new RuntimeException("err code!");
         }
     }
 

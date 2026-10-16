@@ -31,4 +31,6 @@ public abstract class AbstractMultiThreadStrategyRouter<T,D,R> implements Strate
     protected abstract void multiThread(T requestParameter, D dynamicContext) throws ExecutionException, InterruptedException, TimeoutException;
 
 
+
+
 }

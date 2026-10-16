@@ -1,11 +1,14 @@
 package com.hxy.domain.activity.model.valobj;
 
+import com.hxy.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Date;
+import java.util.Objects;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -79,6 +82,27 @@ public class GroupBuyActivityDiscountVO {
      */
     private String tagScope;
 
+    public boolean isVisible() {
+        if(StringUtils.isBlank(this.tagScope)) return TagScopeEnumVO.VISIBLE.getAllow();
+
+        String[] split = this.tagScope.split(Constants.SPLIT);
+        if(split.length > 0 && Objects.equals(split[0], "1") && StringUtils.isNoneBlank(split[0])) {
+            return TagScopeEnumVO.VISIBLE.getRefuse();
+        }
+        return TagScopeEnumVO.VISIBLE.getAllow();
+    }
+
+    public boolean isEnable(){
+        if(StringUtils.isBlank(this.tagScope)) return TagScopeEnumVO.ENABLE.getAllow();
+
+        String[] split = this.tagScope.split(Constants.SPLIT);
+        if(split.length == 2 && Objects.equals(split[1], "2") && StringUtils.isNoneBlank(split[1])) {
+            return TagScopeEnumVO.ENABLE.getRefuse();
+        }
+        return TagScopeEnumVO.ENABLE.getAllow();
+
+    }
+
     @Getter
     @Builder
     @AllArgsConstructor
@@ -97,7 +121,7 @@ public class GroupBuyActivityDiscountVO {
         /**
          * 折扣类型（0:base、1:tag）
          */
-        private Byte discountType;
+        private DiscountTypeEnum discountType;
 
         /**
          * 营销优惠计划（ZJ:直减、MJ:满减、N元购）

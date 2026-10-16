@@ -1,0 +1,296 @@
+26-10-13.21:41:48.720 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 16356 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-13.21:41:48.721 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-13.21:41:49.554 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexGroupBuyMarketServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-10-13.21:41:49.559 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-10-13.21:41:49.577 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory' in your configuration.
+
+26-10-13.21:41:49.578 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@478db956] to prepare test instance [com.hxy.test.domain.activity.IIndexGroupBuyMarketServiceTest@28e19366]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:313)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:647)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexGroupBuyMarketServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 71 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 87 common frames omitted
+26-10-13.21:50:31.475 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 2308 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-13.21:50:31.486 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-13.21:50:33.069 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 1.945 seconds (JVM running for 2.717)
+26-10-13.21:50:33.287 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-13.21:50:33.551 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-13.21:50:33.709 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-13.21:50:33.713 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":0.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+26-10-13.21:50:33.730 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-13.21:50:33.745 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.19:48:57.160 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 37132 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.19:48:57.160 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+26-10-14.19:48:58.069 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.19:48:58.071 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.19:48:58.109 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+26-10-14.19:48:59.489 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.19:49:00.076 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.19:49:00.087 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.19:49:01.669 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.19:49:01.733 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.976 seconds (JVM running for 5.764)
+26-10-14.19:49:01.968 [main            ] INFO  ITagServiceTest        - 测试结果：false
+26-10-14.19:49:01.970 [main            ] INFO  ITagServiceTest        - 测试结果：false
+26-10-14.19:49:01.999 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.19:49:02.449 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.19:49:02.887 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.19:49:02.910 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.20:05:48.610 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 6612 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.20:05:48.612 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+26-10-14.20:05:49.347 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.20:05:49.361 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.20:05:49.394 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+26-10-14.20:05:50.548 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.20:05:51.109 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:05:51.123 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:05:52.510 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.20:05:52.563 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.293 seconds (JVM running for 5.04)
+26-10-14.20:05:52.736 [main            ] INFO  ITagServiceTest        - 测试结果：true
+26-10-14.20:05:52.737 [main            ] INFO  ITagServiceTest        - 测试结果：false
+26-10-14.20:05:52.768 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.20:05:53.006 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.20:05:53.151 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.20:05:53.172 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.20:07:35.319 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 36836 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.20:07:35.320 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+26-10-14.20:07:35.999 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.20:07:36.001 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.20:07:36.042 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+26-10-14.20:07:37.152 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.20:07:37.740 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:07:37.753 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:07:39.015 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.20:07:39.058 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.065 seconds (JVM running for 4.825)
+26-10-14.20:07:39.236 [main            ] INFO  ITagServiceTest        - 测试结果：true
+26-10-14.20:07:39.237 [main            ] INFO  ITagServiceTest        - 测试结果：false
+26-10-14.20:09:33.310 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 24008 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.20:09:33.310 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+26-10-14.20:09:33.990 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.20:09:33.993 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.20:09:34.028 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+26-10-14.20:09:35.125 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.20:09:35.660 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:09:35.671 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:09:37.029 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.20:09:37.075 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.117 seconds (JVM running for 4.84)
+26-10-14.20:09:37.240 [main            ] INFO  ITagServiceTest        - 测试结果：true
+26-10-14.20:09:37.241 [main            ] INFO  ITagServiceTest        - 测试结果：false
+26-10-14.20:09:37.268 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.20:09:37.496 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.20:09:37.608 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.20:09:37.624 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.20:11:21.973 [main            ] INFO  ITagServiceTest        - Starting ITagServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 36392 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.20:11:21.974 [main            ] INFO  ITagServiceTest        - The following 1 profile is active: "dev"
+26-10-14.20:11:22.680 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.20:11:22.683 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.20:11:22.727 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+26-10-14.20:11:23.811 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.20:11:25.124 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:11:25.134 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.20:11:26.351 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.20:11:26.400 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 4.796 seconds (JVM running for 5.499)
+26-10-14.20:11:26.576 [main            ] INFO  ITagServiceTest        - 测试结果：true
+26-10-14.20:11:26.577 [main            ] INFO  ITagServiceTest        - 测试结果：false
+26-10-14.20:11:26.605 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.20:11:26.827 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.20:11:26.902 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.20:11:26.904 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.22:16:58.230 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 37092 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.22:16:58.231 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-14.22:16:58.933 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.22:16:58.935 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.22:16:58.992 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+26-10-14.22:17:00.100 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.22:17:00.500 [main            ] WARN  DefaultDnsServerAddressStreamProvider - Default DNS servers: [/8.8.8.8:53, /8.8.4.4:53] (Google Public DNS as a fallback)
+26-10-14.22:17:00.832 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:17:00.846 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:17:02.336 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.22:17:02.394 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.48 seconds (JVM running for 5.564)
+26-10-14.22:17:02.661 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.22:17:02.973 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.22:17:03.105 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.22:17:03.115 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.22:21:46.446 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 26288 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.22:21:46.447 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-14.22:21:47.120 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.22:21:47.124 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.22:21:47.177 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+26-10-14.22:21:48.187 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.22:21:48.531 [main            ] WARN  DefaultDnsServerAddressStreamProvider - Default DNS servers: [/8.8.8.8:53, /8.8.4.4:53] (Google Public DNS as a fallback)
+26-10-14.22:21:48.679 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:21:48.690 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:21:50.012 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.22:21:50.059 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.944 seconds (JVM running for 4.795)
+26-10-14.22:21:50.281 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.22:21:50.609 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.22:21:50.654 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-14.22:21:50.801 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-14.22:21:50.802 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-14.22:21:50.808 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":0.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+26-10-14.22:21:50.848 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.22:21:50.871 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.22:22:14.644 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 15560 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.22:22:14.645 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-14.22:22:15.388 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.22:22:15.390 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.22:22:15.449 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+26-10-14.22:22:16.546 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.22:22:16.896 [main            ] WARN  DefaultDnsServerAddressStreamProvider - Default DNS servers: [/8.8.8.8:53, /8.8.4.4:53] (Google Public DNS as a fallback)
+26-10-14.22:22:17.035 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:22:17.054 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:22:18.410 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.22:22:18.462 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.148 seconds (JVM running for 5.041)
+26-10-14.22:22:18.672 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.22:22:19.001 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.22:22:19.081 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.22:22:19.088 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.22:22:45.907 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 38200 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.22:22:45.908 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-14.22:22:46.609 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.22:22:46.613 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.22:22:46.673 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+26-10-14.22:22:47.756 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.22:22:48.091 [main            ] WARN  DefaultDnsServerAddressStreamProvider - Default DNS servers: [/8.8.8.8:53, /8.8.4.4:53] (Google Public DNS as a fallback)
+26-10-14.22:22:48.250 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:22:48.261 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:22:49.611 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.22:22:49.663 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.127 seconds (JVM running for 5.049)
+26-10-14.22:22:49.883 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.22:22:50.209 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.22:22:50.257 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-14.22:22:50.378 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-14.22:22:50.379 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-14.22:22:50.384 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":0.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+26-10-14.22:22:50.419 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.22:22:50.438 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-14.22:24:00.649 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 8780 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-14.22:24:00.649 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-14.22:24:01.352 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-14.22:24:01.362 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-14.22:24:01.422 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+26-10-14.22:24:02.549 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-14.22:24:02.922 [main            ] WARN  DefaultDnsServerAddressStreamProvider - Default DNS servers: [/8.8.8.8:53, /8.8.4.4:53] (Google Public DNS as a fallback)
+26-10-14.22:24:03.080 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:24:03.092 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-14.22:24:04.543 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-14.22:24:04.592 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.27 seconds (JVM running for 5.176)
+26-10-14.22:24:04.839 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-14.22:24:05.140 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-14.22:24:05.171 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-14.22:24:05.280 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890002","source":"s01","userId":"xiaofuge"}
+26-10-14.22:24:05.280 [main            ] INFO  ErrorNode              - 拼团商品查询试算服务-NoMarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890002","source":"s01","userId":"xiaofuge"}
+26-10-14.22:24:05.322 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-14.22:24:05.333 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

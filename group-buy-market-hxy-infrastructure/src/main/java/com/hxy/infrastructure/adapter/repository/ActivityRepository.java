@@ -1,6 +1,7 @@
 package com.hxy.infrastructure.adapter.repository;
 
 import com.hxy.domain.activity.adapter.repository.IActivityRepository;
+import com.hxy.domain.activity.model.valobj.DiscountTypeEnum;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.hxy.domain.activity.model.valobj.SCSkuActivityVO;
 import com.hxy.domain.activity.model.valobj.SkuVO;
@@ -12,6 +13,8 @@ import com.hxy.infrastructure.dao.po.GroupBuyActivity;
 import com.hxy.infrastructure.dao.po.GroupBuyDiscount;
 import com.hxy.infrastructure.dao.po.SCSkuActivity;
 import com.hxy.infrastructure.dao.po.Sku;
+import com.hxy.infrastructure.redis.IRedisService;
+import org.redisson.api.RBitSet;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
@@ -28,6 +31,8 @@ public class ActivityRepository implements IActivityRepository {
     private ISkuDao skuDao;
     @Resource
     private ISCSkuActivityDao sCSkuActivityDao;
+    @Resource
+    private IRedisService redisService;
 
     @Override
     public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId) {
@@ -43,7 +48,7 @@ public class ActivityRepository implements IActivityRepository {
         GroupBuyActivityDiscountVO.GroupBuyDiscount groupBuyDiscount = GroupBuyActivityDiscountVO.GroupBuyDiscount.builder()
                 .discountName(groupBuyDiscountRes.getDiscountName())
                 .discountDesc(groupBuyDiscountRes.getDiscountDesc())
-                .discountType(groupBuyDiscountRes.getDiscountType())
+                .discountType(DiscountTypeEnum.get(Integer.valueOf(groupBuyDiscountRes.getDiscountType())))
                 .marketPlan(groupBuyDiscountRes.getMarketPlan())
                 .marketExpr(groupBuyDiscountRes.getMarketExpr())
                 .tagId(groupBuyDiscountRes.getTagId())
@@ -92,6 +97,14 @@ public class ActivityRepository implements IActivityRepository {
                 .activityId(scSkuActivity.getActivityId())
                 .goodsId(scSkuActivity.getGoodsId())
                 .build();
+    }
+
+    @Override
+    public boolean isTagCrowdRange(String tagId, String userId) {
+        RBitSet bitSet = redisService.getBitSet(tagId);
+        if(!bitSet.isExists()) return true;
+        //判断用户是否存在于人群中
+        return bitSet.get(redisService.getIndexFromUserId(userId));
     }
 
 }
