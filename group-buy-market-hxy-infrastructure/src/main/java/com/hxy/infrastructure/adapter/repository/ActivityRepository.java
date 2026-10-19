@@ -88,7 +88,7 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public SCSkuActivityVO querySCSkuActivityBySCGoodsId(String source, String channel, String goodsId) {
         SCSkuActivity scSkuActivityReq = new SCSkuActivity();
-        scSkuActivityReq.setGoodsId(source);
+        scSkuActivityReq.setSource(source);
         scSkuActivityReq.setChannel(channel);
         scSkuActivityReq.setGoodsId(goodsId);
 

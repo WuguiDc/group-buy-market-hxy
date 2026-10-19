@@ -23,7 +23,7 @@ import javax.annotation.Resource;
 @Slf4j
 @RestController
 @CrossOrigin("*")
-@RequestMapping("api/v1/gbm/dcc")
+@RequestMapping("api/v1/gbm/dcc/")
 public class DCCController implements IDCCService {
 
     @Resource
