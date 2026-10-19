@@ -13,6 +13,7 @@ import com.hxy.infrastructure.dao.po.GroupBuyActivity;
 import com.hxy.infrastructure.dao.po.GroupBuyDiscount;
 import com.hxy.infrastructure.dao.po.SCSkuActivity;
 import com.hxy.infrastructure.dao.po.Sku;
+import com.hxy.infrastructure.dcc.DccService;
 import com.hxy.infrastructure.redis.IRedisService;
 import org.redisson.api.RBitSet;
 import org.springframework.stereotype.Repository;
@@ -33,6 +34,9 @@ public class ActivityRepository implements IActivityRepository {
     private ISCSkuActivityDao sCSkuActivityDao;
     @Resource
     private IRedisService redisService;
+
+    @Resource
+    private DccService dccService;
 
     @Override
     public GroupBuyActivityDiscountVO queryGroupBuyActivityDiscountVO(Long activityId) {
@@ -107,4 +111,13 @@ public class ActivityRepository implements IActivityRepository {
         return bitSet.get(redisService.getIndexFromUserId(userId));
     }
 
+    @Override
+    public boolean downgredeSwitch() {
+        return dccService.isDowngradeSwitch();
+    }
+
+    @Override
+    public boolean cutRange(String userId) {
+        return dccService.isCutRange(userId);
+    }
 }
