@@ -1,10 +1,10 @@
-package com.hxy.domain.activity.service.trail.node;
+package com.hxy.domain.activity.service.trial.node;
 
 import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
-import com.hxy.domain.activity.service.trail.AbstractGroupBuyMarketSupport;
-import com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory;
+import com.hxy.domain.activity.service.trial.AbstractGroupBuyMarketSupport;
+import com.hxy.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
 import com.hxy.types.design.framework.tree.StrategyHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

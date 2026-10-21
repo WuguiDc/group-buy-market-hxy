@@ -1,4 +1,4 @@
-package com.hxy.domain.activity.service.trail.node;
+package com.hxy.domain.activity.service.trial.node;
 
 
 import com.alibaba.fastjson.JSON;
@@ -7,10 +7,10 @@ import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.hxy.domain.activity.model.valobj.SkuVO;
 import com.hxy.domain.activity.service.discount.IDiscountCalculateService;
-import com.hxy.domain.activity.service.trail.AbstractGroupBuyMarketSupport;
-import com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory;
-import com.hxy.domain.activity.service.trail.factory.thread.QueryGroupBuyActivityDiscountVOThreadTask;
-import com.hxy.domain.activity.service.trail.factory.thread.QuerySkuVOFromDBThreadTask;
+import com.hxy.domain.activity.service.trial.AbstractGroupBuyMarketSupport;
+import com.hxy.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
+import com.hxy.domain.activity.service.trial.factory.thread.QueryGroupBuyActivityDiscountVOThreadTask;
+import com.hxy.domain.activity.service.trial.factory.thread.QuerySkuVOFromDBThreadTask;
 import com.hxy.types.design.framework.tree.StrategyHandler;
 import com.hxy.types.enums.ResponseCode;
 import com.hxy.types.exception.AppException;
@@ -91,8 +91,9 @@ public class MarketNode extends AbstractGroupBuyMarketSupport<MarketProductEntit
         }
 
         // 折扣价格
-        BigDecimal deductionPrice = discountCalculateService.calculate(requestParameter.getUserId(), skuVO.getOriginalPrice(), groupBuyDiscount);
-        dynamicContext.setDeductionPrice(deductionPrice);
+        BigDecimal payPrice = discountCalculateService.calculate(requestParameter.getUserId(), skuVO.getOriginalPrice(), groupBuyDiscount);
+        dynamicContext.setDeductionPrice(skuVO.getOriginalPrice().subtract(payPrice));
+        dynamicContext.setPayPrice(payPrice);
 
         return router(requestParameter, dynamicContext);
     }

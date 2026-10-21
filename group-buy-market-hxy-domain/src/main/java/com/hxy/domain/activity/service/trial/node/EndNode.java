@@ -1,12 +1,12 @@
-package com.hxy.domain.activity.service.trail.node;
+package com.hxy.domain.activity.service.trial.node;
 
 
 import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.hxy.domain.activity.model.valobj.SkuVO;
-import com.hxy.domain.activity.service.trail.AbstractGroupBuyMarketSupport;
-import com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory;
+import com.hxy.domain.activity.service.trial.AbstractGroupBuyMarketSupport;
+import com.hxy.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
 import com.hxy.types.design.framework.tree.StrategyHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -30,6 +30,7 @@ public class EndNode extends AbstractGroupBuyMarketSupport<MarketProductEntity, 
 
         // 折扣价格
         BigDecimal deductionPrice = dynamicContext.getDeductionPrice();
+        BigDecimal payPrice = dynamicContext.getPayPrice();
 
         // 返回空结果
         return TrialBalanceEntity.builder()
@@ -37,6 +38,7 @@ public class EndNode extends AbstractGroupBuyMarketSupport<MarketProductEntity, 
                 .goodsName(skuVO.getGoodsName())
                 .originalPrice(skuVO.getOriginalPrice())
                 .deductionPrice(deductionPrice)
+                .payPrice(payPrice)
                 .targetCount(groupBuyActivityDiscountVO.getTarget())
                 .startTime(groupBuyActivityDiscountVO.getStartTime())
                 .endTime(groupBuyActivityDiscountVO.getEndTime())

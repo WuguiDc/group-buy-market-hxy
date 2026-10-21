@@ -3,7 +3,7 @@ package com.hxy.domain.activity.service;
 
 import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
-import com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory;
+import com.hxy.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
 import com.hxy.types.design.framework.tree.StrategyHandler;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.hxy.domain.activity.service.trail.factory.thread;
+package com.hxy.domain.activity.service.trial.factory.thread;
 
 import com.hxy.domain.activity.adapter.repository.IActivityRepository;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;

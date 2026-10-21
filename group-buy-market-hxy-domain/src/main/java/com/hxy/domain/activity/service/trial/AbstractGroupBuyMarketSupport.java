@@ -1,10 +1,8 @@
-package com.hxy.domain.activity.service.trail;
+package com.hxy.domain.activity.service.trial;
 
 import com.hxy.domain.activity.adapter.repository.IActivityRepository;
-import com.hxy.domain.activity.model.entity.MarketProductEntity;
-import com.hxy.domain.activity.service.trail.factory.DefaultActivityStrategyFactory;
+import com.hxy.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
 import com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter;
-import com.hxy.types.design.framework.tree.AbstractStrategyRouter;
 
 import javax.annotation.Resource;
 import java.util.concurrent.ExecutionException;
