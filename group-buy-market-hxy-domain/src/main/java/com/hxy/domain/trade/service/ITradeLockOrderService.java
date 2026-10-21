@@ -6,11 +6,11 @@ import com.hxy.domain.trade.model.entity.PayDiscountEntity;
 import com.hxy.domain.trade.model.entity.UserEntity;
 import com.hxy.domain.trade.model.valobj.GroupBuyProgressVO;
 
-public interface ITradeOrderService {
+public interface ITradeLockOrderService {
 
 
 
-    MarketPayOrderEntity queryMarketPayOrderByOutTradeNo(String userId,String outTradeNo);
+    MarketPayOrderEntity queryNoPayMarketPayOrderByOutTradeNo(String userId,String outTradeNo);
 
     GroupBuyProgressVO queryGroupBuyProgress(String teamId);
 

@@ -9,13 +9,12 @@ import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.hxy.domain.activity.service.IIndexGroupBuyMarketService;
-import com.hxy.domain.trade.adapter.repository.ITradeRepository;
 import com.hxy.domain.trade.model.entity.MarketPayOrderEntity;
 import com.hxy.domain.trade.model.entity.PayActivityEntity;
 import com.hxy.domain.trade.model.entity.PayDiscountEntity;
 import com.hxy.domain.trade.model.entity.UserEntity;
 import com.hxy.domain.trade.model.valobj.GroupBuyProgressVO;
-import com.hxy.domain.trade.service.ITradeOrderService;
+import com.hxy.domain.trade.service.ITradeLockOrderService;
 import com.hxy.types.enums.ResponseCode;
 import com.hxy.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +34,7 @@ public class MarketTradeController implements IMarketTradeService {
     @Resource
     private IIndexGroupBuyMarketService indexGroupBuyMarketService;
     @Resource
-    private ITradeOrderService tradeOrderService;
+    private ITradeLockOrderService tradeOrderService;
 
     @RequestMapping(value = "lock_market_pay_order", method = RequestMethod.POST)
     @Override
@@ -61,7 +60,7 @@ public class MarketTradeController implements IMarketTradeService {
             }
 
             // 查询 outTradeNo 是否已经存在交易记录
-            MarketPayOrderEntity marketPayOrderEntity = tradeOrderService.queryMarketPayOrderByOutTradeNo(userId, outTradeNo);
+            MarketPayOrderEntity marketPayOrderEntity = tradeOrderService.queryNoPayMarketPayOrderByOutTradeNo(userId, outTradeNo);
             if (null != marketPayOrderEntity) {
                 LockMarketPayOrderResponseDTO lockMarketPayOrderResponseDTO = LockMarketPayOrderResponseDTO.builder()
                         .orderId(marketPayOrderEntity.getOrderId())

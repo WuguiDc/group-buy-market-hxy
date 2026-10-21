@@ -1,17 +1,18 @@
-package com.hxy.domain.trade.service;
+package com.hxy.domain.trade.service.lock;
 
 import com.hxy.domain.trade.adapter.repository.ITradeRepository;
 import com.hxy.domain.trade.model.aggregate.GroupBuyOrderAggregate;
 import com.hxy.domain.trade.model.entity.*;
 import com.hxy.domain.trade.model.valobj.GroupBuyProgressVO;
-import com.hxy.domain.trade.service.factory.TradeRuleFilterFactory;
+import com.hxy.domain.trade.service.ITradeLockOrderService;
+import com.hxy.domain.trade.service.lock.factory.TradeRuleFilterFactory;
 import com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
 @Service
-public class TradeOrderService implements ITradeOrderService {
+public class TradeLockOrderService implements ITradeLockOrderService {
 
     @Resource
     private ITradeRepository repository;
@@ -20,7 +21,7 @@ public class TradeOrderService implements ITradeOrderService {
     private BusinessLinkedList<TradeRuleCommandEntity, TradeRuleFilterFactory.DynamicContext, TradeRuleFilterBackEntity> tradeRuleFilter;
 
     @Override
-    public MarketPayOrderEntity queryMarketPayOrderByOutTradeNo(String userId,String outTradeNo) {
+    public MarketPayOrderEntity queryNoPayMarketPayOrderByOutTradeNo(String userId,String outTradeNo) {
         return repository.queryMarketPayOrderByOutTradeNo(userId,outTradeNo);
     }
 
