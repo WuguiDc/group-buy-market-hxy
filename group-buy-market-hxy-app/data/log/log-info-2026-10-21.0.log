@@ -1,0 +1,1166 @@
+26-10-16.21:18:29.809 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 25440 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-16.21:18:29.810 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-16.21:18:30.710 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-16.21:18:30.713 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-16.21:18:30.741 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+26-10-16.21:18:31.044 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$302d92f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:18:31.366 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:18:31.560 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-16.21:18:32.188 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:18:32.202 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:18:32.244 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:18:34.226 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-16.21:18:34.270 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.847 seconds (JVM running for 5.694)
+26-10-16.21:18:57.364 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 24288 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-16.21:18:57.365 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-16.21:18:58.173 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-16.21:18:58.175 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-16.21:18:58.203 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+26-10-16.21:18:58.491 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f33db297] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:18:58.727 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:18:58.917 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-16.21:18:59.464 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:18:59.487 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:18:59.521 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:19:01.499 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-16.21:19:01.551 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.57 seconds (JVM running for 5.296)
+26-10-16.21:20:27.797 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 36100 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-16.21:20:27.798 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-16.21:20:28.486 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-16.21:20:28.488 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-16.21:20:28.516 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+26-10-16.21:20:28.788 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$156150b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:20:29.004 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:20:29.197 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-16.21:20:29.717 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:20:29.728 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:20:29.771 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:20:31.489 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-16.21:20:31.544 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.17 seconds (JVM running for 4.864)
+26-10-16.21:21:24.439 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 32936 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-16.21:21:24.440 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-16.21:21:25.253 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-16.21:21:25.256 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-16.21:21:25.302 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+26-10-16.21:21:25.612 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$aa9f1db7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:21:25.843 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:21:26.029 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-16.21:21:26.607 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:21:26.618 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:21:26.655 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:21:28.515 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-16.21:21:28.573 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.498 seconds (JVM running for 5.219)
+26-10-16.21:26:56.881 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 40064 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-16.21:26:56.882 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-16.21:26:57.590 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-16.21:26:57.594 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-16.21:26:57.626 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+26-10-16.21:26:57.956 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$933f1763] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:26:58.185 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:26:58.378 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-16.21:26:58.915 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:26:58.928 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:26:58.965 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:27:00.815 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-16.21:27:00.869 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.363 seconds (JVM running for 5.084)
+26-10-16.21:27:19.267 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 3484 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-16.21:27:19.268 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-16.21:27:20.001 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-16.21:27:20.004 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-16.21:27:20.040 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+26-10-16.21:27:20.324 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$3c8eb5fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:27:20.559 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:27:20.768 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-16.21:27:21.325 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:27:21.335 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:27:21.370 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:27:23.192 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-16.21:27:23.233 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.322 seconds (JVM running for 5.044)
+26-10-16.21:27:50.035 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 37584 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-16.21:27:50.037 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-16.21:27:50.803 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-16.21:27:50.805 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-16.21:27:50.842 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+26-10-16.21:27:51.192 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f908b602] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:27:51.430 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:27:51.627 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-16.21:27:52.156 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:27:52.172 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-16.21:27:52.208 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-16.21:27:54.235 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-16.21:27:54.289 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 4.636 seconds (JVM running for 5.375)
+26-10-16.21:27:54.526 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-16.21:27:54.826 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-16.21:27:54.892 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-16.21:27:55.056 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-16.21:27:55.064 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-16.21:27:55.069 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+26-10-16.21:27:55.080 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-16.21:27:55.107 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-19.19:53:49.441 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 19224 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-19.19:53:49.442 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-19.19:53:50.256 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-19.19:53:50.259 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-19.19:53:50.294 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+26-10-19.19:53:50.627 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$6eb6f65c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.19:53:50.932 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.19:53:51.150 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-19.19:53:51.676 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.19:53:51.689 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.19:53:51.726 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.19:53:52.208 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'marketTradeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.domain.trade.service.ITradeLockOrderService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-10-19.19:53:52.239 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-10-19.19:53:52.271 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.hxy.domain.trade.service.ITradeLockOrderService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hxy.domain.trade.service.ITradeLockOrderService' in your configuration.
+
+26-10-19.19:53:52.275 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7770f470] to prepare test instance [com.hxy.test.trigger.MarketTradeControllerTest@6486fe7b]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'marketTradeService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.domain.trade.service.ITradeLockOrderService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.domain.trade.service.ITradeLockOrderService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+26-10-19.20:03:02.055 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 10860 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-19.20:03:02.056 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-19.20:03:02.950 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-19.20:03:02.954 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-19.20:03:03.007 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+26-10-19.20:03:03.336 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$5afc175b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:03:03.667 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:03:03.882 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-19.20:03:04.528 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.20:03:04.543 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.20:03:04.583 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:03:06.921 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-19.20:03:06.989 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.404 seconds (JVM running for 6.562)
+26-10-19.20:03:07.494 [main            ] INFO  MarketTradeService     - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"120917994926","source":"s01","userId":"xiaofuge"}
+26-10-19.20:03:07.534 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-19.20:03:07.974 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-19.20:03:08.051 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-19.20:03:08.054 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-19.20:03:08.054 [main            ] INFO  ErrorNode              - 拼团商品查询试算服务-NoMarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-19.20:03:08.058 [main            ] ERROR MarketTradeService     - 营销交易锁单业务异常:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"120917994926","source":"s01","userId":"xiaofuge"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.activity.service.trial.node.ErrorNode.doApply(ErrorNode.java:24)
+	at com.hxy.domain.activity.service.trial.node.ErrorNode.doApply(ErrorNode.java:15)
+	at com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:25)
+	at com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:16)
+	at com.hxy.domain.activity.service.trial.node.MarketNode.doApply(MarketNode.java:77)
+	at com.hxy.domain.activity.service.trial.node.MarketNode.doApply(MarketNode.java:30)
+	at com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:25)
+	at com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:16)
+	at com.hxy.domain.activity.service.trial.node.SwitchNode.doApply(SwitchNode.java:35)
+	at com.hxy.domain.activity.service.trial.node.SwitchNode.doApply(SwitchNode.java:16)
+	at com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:25)
+	at com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter.router(AbstractMultiThreadStrategyRouter.java:16)
+	at com.hxy.domain.activity.service.trial.node.RootNode.doApply(RootNode.java:38)
+	at com.hxy.domain.activity.service.trial.node.RootNode.doApply(RootNode.java:22)
+	at com.hxy.types.design.framework.tree.AbstractMultiThreadStrategyRouter.apply(AbstractMultiThreadStrategyRouter.java:25)
+	at com.hxy.domain.activity.service.IndexGroupBuyMarketServiceImpl.indexMarketTrial(IndexGroupBuyMarketServiceImpl.java:28)
+	at com.hxy.trigger.http.MarketTradeService.lockMarketPayOrder(MarketTradeService.java:91)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder(MarketTradeControllerTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-19.20:03:08.061 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"120917994926","source":"s01","userId":"xiaofuge"} res:{"code":"E0002","info":"无拼团营销配置"}
+26-10-19.20:03:08.074 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-19.20:03:08.078 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-19.20:14:38.198 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 38992 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-19.20:14:38.198 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-19.20:14:39.108 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-19.20:14:39.112 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-19.20:14:39.157 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+26-10-19.20:14:39.511 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$b73d8645] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:14:39.815 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:14:40.046 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-19.20:14:40.619 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.20:14:40.632 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.20:14:40.674 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:14:43.075 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-19.20:14:43.131 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.408 seconds (JVM running for 6.39)
+26-10-19.20:14:43.516 [main            ] INFO  MarketTradeController  - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"022777108023","source":"s01","userId":"xiaofuge"}
+26-10-19.20:14:43.554 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-19.20:14:43.814 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-19.20:14:43.877 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-19.20:14:43.880 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-19.20:14:43.933 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xiaofuge marketPayOrderEntity:{"deductionPrice":90.00,"orderId":"500436443446","tradeOrderStatusEnumVO":"CREATE"}
+26-10-19.20:14:43.937 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"022777108023","source":"s01","userId":"xiaofuge"} res:{"code":"0000","data":{"deductionPrice":90.00,"orderId":"500436443446","tradeOrderStatus":0},"info":"成功"}
+26-10-19.20:14:43.947 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-19.20:14:43.961 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-19.20:15:36.093 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 2996 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-19.20:15:36.094 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-19.20:15:36.870 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-19.20:15:36.873 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-19.20:15:36.908 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+26-10-19.20:15:37.197 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$32a2b8eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:15:37.488 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:15:37.692 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-19.20:15:38.284 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.20:15:38.301 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-19.20:15:38.359 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-19.20:15:40.578 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-19.20:15:40.626 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.902 seconds (JVM running for 5.791)
+26-10-19.20:15:40.977 [main            ] INFO  MarketTradeController  - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"965664280924","source":"s01","teamId":"00229340","userId":"xiaofuge"}
+26-10-19.20:15:41.004 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-19.20:15:41.256 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-19.20:15:41.321 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-19.20:15:41.323 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-19.20:15:41.367 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xiaofuge marketPayOrderEntity:{"deductionPrice":90.00,"orderId":"386229819332","tradeOrderStatusEnumVO":"CREATE"}
+26-10-19.20:15:41.371 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"965664280924","source":"s01","teamId":"00229340","userId":"xiaofuge"} res:{"code":"0000","data":{"deductionPrice":90.00,"orderId":"386229819332","tradeOrderStatus":0},"info":"成功"}
+26-10-19.20:15:41.382 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-19.20:15:41.394 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-20.21:04:44.637 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 22132 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-20.21:04:44.639 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-20.21:04:45.476 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-20.21:04:45.485 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-20.21:04:45.542 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+26-10-20.21:04:45.866 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$602bd2f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:04:46.160 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:04:46.412 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-20.21:04:47.053 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:04:47.065 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:04:47.110 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:04:49.298 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-20.21:04:49.354 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.098 seconds (JVM running for 6.005)
+26-10-20.21:04:49.745 [main            ] INFO  MarketTradeController  - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"040252980574","source":"s01","userId":"xiaofuge"}
+26-10-20.21:04:49.766 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-20.21:04:50.041 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-20.21:04:50.140 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-20.21:04:50.142 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-20.21:04:50.153 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge activityId:100123
+26-10-20.21:04:50.159 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"040252980574","source":"s01","userId":"xiaofuge"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:40)
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:20)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeOrderService.java:36)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:101)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder(MarketTradeControllerTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-20.21:04:50.160 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"040252980574","source":"s01","userId":"xiaofuge"} res:{"code":"E0102","info":"不在拼团活动有效时间内"}
+26-10-20.21:04:50.166 [main            ] INFO  MarketTradeController  - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"722084759957","source":"s01","teamId":"00229340","userId":"xiaofuge"}
+26-10-20.21:04:50.176 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-20.21:04:50.176 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-20.21:04:50.178 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge activityId:100123
+26-10-20.21:04:50.180 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"722084759957","source":"s01","teamId":"00229340","userId":"xiaofuge"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:40)
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:20)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeOrderService.java:36)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:101)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null(MarketTradeControllerTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-20.21:04:50.180 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"722084759957","source":"s01","teamId":"00229340","userId":"xiaofuge"} res:{"code":"E0102","info":"不在拼团活动有效时间内"}
+26-10-20.21:04:50.190 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-20.21:04:50.216 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-20.21:07:20.929 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 24964 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-20.21:07:20.930 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-20.21:07:21.731 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-20.21:07:21.734 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-20.21:07:21.777 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+26-10-20.21:07:22.110 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$a711de0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:07:22.329 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:07:22.525 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-20.21:07:23.040 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:07:23.054 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:07:23.087 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:07:24.910 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-20.21:07:24.956 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.394 seconds (JVM running for 5.105)
+26-10-20.21:07:25.272 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg02 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"166408068287","source":"s01","userId":"xfg02"}
+26-10-20.21:07:25.290 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-20.21:07:25.519 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-20.21:07:25.575 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-20.21:07:25.578 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-10-20.21:07:25.588 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg02 activityId:100123
+26-10-20.21:07:25.594 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xfg02 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"166408068287","source":"s01","userId":"xfg02"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:40)
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:20)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeOrderService.java:36)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:101)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder(MarketTradeControllerTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-20.21:07:25.596 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"166408068287","source":"s01","userId":"xfg02"} res:{"code":"E0102","info":"不在拼团活动有效时间内"}
+26-10-20.21:07:25.602 [main            ] INFO  MarketTradeController  - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"305951177210","source":"s01","teamId":"33063446","userId":"xiaofuge"}
+26-10-20.21:07:25.609 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"305951177210","source":"s01","teamId":"33063446","userId":"xiaofuge"} res:{"code":"E0006","info":"拼团组队完结，锁单量已达成"}
+26-10-20.21:07:25.617 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-20.21:07:25.624 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-20.21:08:10.389 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 40364 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-20.21:08:10.390 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-20.21:08:11.104 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-20.21:08:11.106 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-20.21:08:11.153 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+26-10-20.21:08:11.422 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$8f3d641f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:08:11.653 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:08:11.846 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-20.21:08:12.397 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:08:12.410 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:08:12.446 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:08:14.339 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-20.21:08:14.388 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.344 seconds (JVM running for 5.081)
+26-10-20.21:08:14.886 [main            ] INFO  MarketTradeController  - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"046660890869","source":"s01","teamId":"44846821","userId":"xiaofuge"}
+26-10-20.21:08:14.909 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-20.21:08:15.183 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-20.21:08:15.238 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-20.21:08:15.241 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-20.21:08:15.250 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge activityId:100123
+26-10-20.21:08:15.257 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"046660890869","source":"s01","teamId":"44846821","userId":"xiaofuge"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:40)
+	at com.hxy.domain.trade.service.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:20)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeOrderService.java:36)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:101)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null(MarketTradeControllerTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-20.21:08:15.259 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"046660890869","source":"s01","teamId":"44846821","userId":"xiaofuge"} res:{"code":"E0102","info":"不在拼团活动有效时间内"}
+26-10-20.21:08:15.285 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-20.21:08:15.294 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-20.21:09:09.553 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 32920 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-20.21:09:09.554 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-20.21:09:10.284 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-20.21:09:10.288 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-20.21:09:10.333 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+26-10-20.21:09:10.631 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$724da39f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:09:10.857 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:09:11.060 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-20.21:09:11.604 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:09:11.618 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:09:11.651 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:09:13.826 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-20.21:09:13.870 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.683 seconds (JVM running for 5.414)
+26-10-20.21:09:14.201 [main            ] INFO  MarketTradeController  - 营销交易锁单:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"414079137956","source":"s01","teamId":"44846821","userId":"xiaofuge"}
+26-10-20.21:09:14.225 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-20.21:09:14.513 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-20.21:09:14.580 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-20.21:09:14.583 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge"}
+26-10-20.21:09:14.597 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge activityId:100123
+26-10-20.21:09:14.601 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xiaofuge activityId:100123
+26-10-20.21:09:14.607 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xiaofuge LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"414079137956","source":"s01","teamId":"44846821","userId":"xiaofuge"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:31)
+	at com.hxy.domain.trade.service.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:17)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeOrderService.java:36)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:101)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null(MarketTradeControllerTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-20.21:09:14.608 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"414079137956","source":"s01","teamId":"44846821","userId":"xiaofuge"} res:{"code":"E0103","info":"当前用户参与此拼团次数已达上限"}
+26-10-20.21:09:14.622 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-20.21:09:14.649 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-20.21:10:18.238 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 3200 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-20.21:10:18.243 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-20.21:10:18.977 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-20.21:10:18.979 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-20.21:10:19.027 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+26-10-20.21:10:19.289 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$a711de0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:10:19.509 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:10:19.698 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-20.21:10:20.302 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:10:20.313 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:10:20.345 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:10:22.512 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-20.21:10:22.559 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.688 seconds (JVM running for 5.429)
+26-10-20.21:10:22.899 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg01 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"024413024210","source":"s01","teamId":"44846821","userId":"xfg01"}
+26-10-20.21:10:22.919 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-20.21:10:23.154 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-20.21:10:23.205 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-20.21:10:23.208 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-10-20.21:10:23.225 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg01 activityId:100123
+26-10-20.21:10:23.228 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg01 activityId:100123
+26-10-20.21:10:23.256 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg01 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"937933428697","tradeOrderStatusEnumVO":"CREATE"}
+26-10-20.21:10:23.259 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"024413024210","source":"s01","teamId":"44846821","userId":"xfg01"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"937933428697","tradeOrderStatus":0},"info":"成功"}
+26-10-20.21:10:23.270 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-20.21:10:23.281 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-20.21:11:56.193 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 41936 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-20.21:11:56.194 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-20.21:11:56.929 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-20.21:11:56.931 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-20.21:11:56.997 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+26-10-20.21:11:57.293 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$1d9845d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:11:57.521 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:11:57.724 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-20.21:11:58.334 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:11:58.345 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-20.21:11:58.379 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-20.21:12:00.536 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-20.21:12:00.586 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.756 seconds (JVM running for 5.466)
+26-10-20.21:12:00.941 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"561128706318","source":"s01","userId":"xfg04"}
+26-10-20.21:12:00.957 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-20.21:12:01.240 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-20.21:12:01.299 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-20.21:12:01.302 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-10-20.21:12:01.313 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg04 activityId:100123
+26-10-20.21:12:01.320 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg04 activityId:100123
+26-10-20.21:12:01.351 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg04 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"539808263237","tradeOrderStatusEnumVO":"CREATE"}
+26-10-20.21:12:01.356 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"561128706318","source":"s01","userId":"xfg04"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"539808263237","tradeOrderStatus":0},"info":"成功"}
+26-10-20.21:12:01.370 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-20.21:12:01.381 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:28:53.747 [main            ] INFO  ITradeLockOrderServiceTest - Starting ITradeLockOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 43596 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:28:53.749 [main            ] INFO  ITradeLockOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:28:54.623 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:28:54.626 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:28:54.672 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+26-10-21.19:28:54.963 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$a304e190] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:28:55.249 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:28:55.455 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:28:55.996 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:28:56.006 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:28:56.045 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:28:58.560 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:28:58.625 [main            ] INFO  ITradeLockOrderServiceTest - Started ITradeLockOrderServiceTest in 5.328 seconds (JVM running for 6.299)
+26-10-21.19:28:58.939 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:28:59.292 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:28:59.366 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.19:28:59.520 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-10-21.19:28:59.551 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg02 activityId:100123
+26-10-21.19:28:59.575 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:28:59.591 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:31:44.435 [main            ] INFO  ITradeLockOrderServiceTest - Starting ITradeLockOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 39156 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:31:44.435 [main            ] INFO  ITradeLockOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:31:45.293 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:31:45.296 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:31:45.344 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+26-10-21.19:31:45.685 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f57d123c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:31:45.934 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:31:46.145 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:31:46.658 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:31:46.670 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:31:46.703 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:31:48.861 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:31:48.918 [main            ] INFO  ITradeLockOrderServiceTest - Started ITradeLockOrderServiceTest in 4.909 seconds (JVM running for 5.815)
+26-10-21.19:31:49.206 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:31:49.864 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:31:49.926 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.19:31:50.092 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-10-21.19:31:50.116 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg02 activityId:100123
+26-10-21.19:31:50.121 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg02 activityId:100123
+26-10-21.19:31:50.215 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:31:50.229 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:36:25.894 [main            ] INFO  ITradeLockOrderServiceTest - Starting ITradeLockOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 8236 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:36:25.895 [main            ] INFO  ITradeLockOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:36:26.993 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:36:26.997 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:36:27.051 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+26-10-21.19:36:27.403 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$8625336b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:36:27.756 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:36:27.999 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:36:28.576 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:36:28.593 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:36:28.631 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:36:31.006 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:36:31.069 [main            ] INFO  ITradeLockOrderServiceTest - Started ITradeLockOrderServiceTest in 5.634 seconds (JVM running for 6.642)
+26-10-21.19:36:31.403 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:36:31.950 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:36:32.008 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.19:36:32.193 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-10-21.19:36:32.216 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg02 activityId:100123
+26-10-21.19:36:32.222 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg02 activityId:100123
+26-10-21.19:36:32.265 [main            ] INFO  ITradeLockOrderServiceTest - 测试结果(New):{"deductionPrice":10.00,"orderId":"594950706510","teamId":"17630749","tradeOrderStatusEnumVO":"CREATE"}
+26-10-21.19:36:32.277 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:36:32.298 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:37:55.479 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 21280 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:37:55.479 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-21.19:37:56.482 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:37:56.485 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:37:56.539 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+26-10-21.19:37:56.870 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$3123520c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:37:57.184 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:37:57.406 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:37:58.008 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:37:58.039 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:37:58.105 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:38:00.437 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:38:00.488 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.431 seconds (JVM running for 6.376)
+26-10-21.19:38:00.932 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"601759590336","source":"s01","teamId":"17630749","userId":"xfg03"}
+26-10-21.19:38:00.963 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:38:01.294 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:38:01.347 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.19:38:01.350 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-10-21.19:38:01.365 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg03 activityId:100123
+26-10-21.19:38:01.369 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg03 activityId:100123
+26-10-21.19:38:01.376 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"601759590336","source":"s01","teamId":"17630749","userId":"xfg03"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.lock.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:30)
+	at com.hxy.domain.trade.service.lock.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:16)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeLockOrderService.java:37)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:100)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null(MarketTradeControllerTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-21.19:38:01.380 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"601759590336","source":"s01","teamId":"17630749","userId":"xfg03"} res:{"code":"E0103","info":"当前用户参与此拼团次数已达上限"}
+26-10-21.19:38:01.398 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:38:01.407 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:38:11.130 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 42452 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:38:11.131 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-21.19:38:12.007 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:38:12.010 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:38:12.060 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+26-10-21.19:38:12.408 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9830053c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:38:12.645 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:38:12.843 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:38:13.533 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:38:13.544 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:38:13.598 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:38:15.968 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:38:16.016 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 5.311 seconds (JVM running for 6.246)
+26-10-21.19:38:16.337 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"839104039204","source":"s01","teamId":"17630749","userId":"xfg04"}
+26-10-21.19:38:16.356 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:38:16.654 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:38:16.705 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.19:38:16.709 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-10-21.19:38:16.735 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg04 activityId:100123
+26-10-21.19:38:16.738 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg04 activityId:100123
+26-10-21.19:38:16.743 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"839104039204","source":"s01","teamId":"17630749","userId":"xfg04"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.lock.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:30)
+	at com.hxy.domain.trade.service.lock.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:16)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeLockOrderService.java:37)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:100)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder_teamId_not_null(MarketTradeControllerTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-21.19:38:16.745 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"839104039204","source":"s01","teamId":"17630749","userId":"xfg04"} res:{"code":"E0103","info":"当前用户参与此拼团次数已达上限"}
+26-10-21.19:38:16.757 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:38:16.765 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:40:14.573 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 37084 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:40:14.574 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-21.19:40:15.669 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:40:15.671 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:40:15.726 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+26-10-21.19:40:16.266 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$8625336b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:40:16.648 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:40:16.900 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:40:17.491 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:40:17.507 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:40:17.547 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:40:20.015 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:40:20.081 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 6.007 seconds (JVM running for 7.094)
+26-10-21.19:40:20.515 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"085423522597","source":"s01","teamId":"17630749","userId":"xfg03"}
+26-10-21.19:40:20.544 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:40:21.003 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:40:21.108 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.19:40:21.113 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-10-21.19:40:21.126 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg03 activityId:100123
+26-10-21.19:40:21.131 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg03 activityId:100123
+26-10-21.19:40:21.283 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg03 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"812389961995","teamId":"17630749","tradeOrderStatusEnumVO":"CREATE"}
+26-10-21.19:40:21.287 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"085423522597","source":"s01","teamId":"17630749","userId":"xfg03"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"812389961995","tradeOrderStatus":0},"info":"成功"}
+26-10-21.19:40:21.297 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:40:21.342 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:40:48.225 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 13144 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:40:48.226 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-21.19:40:49.313 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:40:49.315 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:40:49.367 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+26-10-21.19:40:49.731 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$58066e18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:40:50.042 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:40:50.296 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:40:51.287 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:40:51.354 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:40:51.401 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:40:55.061 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:40:55.185 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 7.441 seconds (JVM running for 8.33)
+26-10-21.19:40:55.856 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"213139438593","source":"s01","teamId":"17630749","userId":"xfg04"}
+26-10-21.19:40:55.945 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:40:56.377 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:40:56.459 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.19:40:56.470 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-10-21.19:40:56.497 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg04 activityId:100123
+26-10-21.19:40:56.507 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg04 activityId:100123
+26-10-21.19:40:56.552 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg04 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"549346111706","teamId":"17630749","tradeOrderStatusEnumVO":"CREATE"}
+26-10-21.19:40:56.559 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"213139438593","source":"s01","teamId":"17630749","userId":"xfg04"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"549346111706","tradeOrderStatus":0},"info":"成功"}
+26-10-21.19:40:56.584 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:40:56.626 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:42:37.023 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 40948 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:42:37.024 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:42:37.926 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:42:37.929 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:42:37.987 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+26-10-21.19:42:38.344 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$977bef0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:42:38.607 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:42:38.838 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:42:39.425 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:42:39.436 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:42:39.482 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:42:42.086 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:42:42.150 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 5.605 seconds (JVM running for 6.637)
+26-10-21.19:42:42.427 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:42:42.778 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:42:42.996 [main            ] INFO  TradeSettlementOrderServiceTest - 请求参数:{"channel":"c01","outTradeNo":"594950706510","source":"s01","userId":"xfg02"}
+26-10-21.19:42:42.996 [main            ] INFO  TradeSettlementOrderServiceTest - 测试结果:null
+26-10-21.19:42:43.016 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:42:43.038 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:47:28.937 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 42044 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:47:28.938 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:47:29.832 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:47:29.836 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:47:29.889 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+26-10-21.19:47:30.239 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$bea6d843] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:47:30.525 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:47:30.738 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:47:31.263 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:47:31.277 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:47:31.317 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:47:33.647 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:47:33.702 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 5.24 seconds (JVM running for 6.082)
+26-10-21.19:47:33.978 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:47:34.375 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:47:34.477 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:47:34.505 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:54:11.295 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 27676 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:54:11.296 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:54:12.265 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:54:12.268 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:54:12.324 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+26-10-21.19:54:12.705 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$e9ba4c49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:54:13.036 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:54:13.296 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:54:13.856 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:54:13.868 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:54:13.917 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:54:16.139 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:54:16.190 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 5.378 seconds (JVM running for 6.359)
+26-10-21.19:54:16.458 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:54:16.843 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:54:17.102 [main            ] INFO  TradeSettlementOrderServiceTest - 请求参数:{"channel":"c01","outTradeNo":"909000098111","source":"s01","userId":"xfg02"}
+26-10-21.19:54:17.107 [main            ] INFO  TradeSettlementOrderServiceTest - 测试结果:{"activityId":100123,"channel":"c01","outTradeNo":"909000098111","source":"s01","teamId":"17630749","userId":"xfg02"}
+26-10-21.19:54:17.126 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:54:17.147 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:54:40.551 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 42668 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:54:40.552 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:54:41.372 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:54:41.375 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:54:41.424 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+26-10-21.19:54:41.797 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$3123520c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:54:42.071 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:54:42.278 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:54:42.912 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:54:42.929 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:54:42.967 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:54:45.297 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:54:45.358 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 5.19 seconds (JVM running for 6.078)
+26-10-21.19:54:45.616 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:54:45.903 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:54:46.127 [main            ] INFO  TradeSettlementOrderServiceTest - 请求参数:{"channel":"c01","outTradeNo":"085423522597","source":"s01","userId":"xfg03"}
+26-10-21.19:54:46.131 [main            ] INFO  TradeSettlementOrderServiceTest - 测试结果:{"activityId":100123,"channel":"c01","outTradeNo":"085423522597","source":"s01","teamId":"17630749","userId":"xfg03"}
+26-10-21.19:54:46.150 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:54:46.166 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.19:55:08.828 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 31256 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.19:55:08.828 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
+26-10-21.19:55:09.704 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.19:55:09.708 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.19:55:09.760 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+26-10-21.19:55:10.135 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$3123520c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:55:10.390 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:55:10.632 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.19:55:11.369 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:55:11.386 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.19:55:11.422 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.19:55:13.742 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.19:55:13.786 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 5.335 seconds (JVM running for 6.217)
+26-10-21.19:55:14.031 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.19:55:14.483 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.19:55:14.702 [main            ] INFO  TradeSettlementOrderServiceTest - 请求参数:{"channel":"c01","outTradeNo":"213139438593","source":"s01","userId":"xfg04"}
+26-10-21.19:55:14.715 [main            ] INFO  TradeSettlementOrderServiceTest - 测试结果:{"activityId":100123,"channel":"c01","outTradeNo":"213139438593","source":"s01","teamId":"17630749","userId":"xfg04"}
+26-10-21.19:55:14.736 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.19:55:14.770 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.21:54:28.027 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 25368 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.21:54:28.028 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-21.21:54:28.973 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.21:54:28.977 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.21:54:29.028 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+26-10-21.21:54:29.351 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$5270f075] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:54:29.613 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:54:29.814 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.21:54:30.355 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.21:54:30.366 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.21:54:30.406 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:54:31.009 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tradeSettlementOrderService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList<com.hxy.domain.trade.model.entity.TradeSettlementRuleCommandEntity, com.hxy.domain.trade.service.settlement.factory.TradeSettlementRuleFilterFactory$DynamicContext, com.hxy.domain.trade.model.entity.TradeSettlementRuleFilterBackEntity>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+26-10-21.21:54:31.038 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+26-10-21.21:54:31.083 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList' in your configuration.
+
+26-10-21.21:54:31.087 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@408d971b] to prepare test instance [com.hxy.test.trigger.MarketTradeControllerTest@36478bce]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tradeSettlementOrderService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList<com.hxy.domain.trade.model.entity.TradeSettlementRuleCommandEntity, com.hxy.domain.trade.service.settlement.factory.TradeSettlementRuleFilterFactory$DynamicContext, com.hxy.domain.trade.model.entity.TradeSettlementRuleFilterBackEntity>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList<com.hxy.domain.trade.model.entity.TradeSettlementRuleCommandEntity, com.hxy.domain.trade.service.settlement.factory.TradeSettlementRuleFilterFactory$DynamicContext, com.hxy.domain.trade.model.entity.TradeSettlementRuleFilterBackEntity>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+26-10-21.21:56:38.635 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 19528 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.21:56:38.637 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-21.21:56:39.547 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.21:56:39.549 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.21:56:39.596 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 Redis repository interfaces.
+26-10-21.21:56:39.927 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$23a35d1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:56:40.152 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:56:40.333 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.21:56:40.892 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.21:56:40.903 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.21:56:40.935 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:56:43.100 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.21:56:43.164 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.904 seconds (JVM running for 5.761)
+26-10-21.21:56:43.497 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"052526685231","source":"s01","userId":"xfg03"}
+26-10-21.21:56:43.525 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.21:56:43.784 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.21:56:43.851 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.21:56:43.854 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-10-21.21:56:43.865 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg03 activityId:100123
+26-10-21.21:56:43.871 [main            ] ERROR MarketTradeController  - 营销交易锁单业务异常:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"052526685231","source":"s01","userId":"xfg03"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.lock.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:39)
+	at com.hxy.domain.trade.service.lock.filter.ActivityUsabilityRuleFilter.apply(ActivityUsabilityRuleFilter.java:19)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeLockOrderService.java:37)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:100)
+	at com.hxy.test.trigger.MarketTradeControllerTest.test_lockMarketPayOrder(MarketTradeControllerTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)
+26-10-21.21:56:43.873 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"052526685231","source":"s01","userId":"xfg03"} res:{"code":"E0102","info":"不在拼团活动有效时间内"}
+26-10-21.21:56:43.892 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.21:56:43.912 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-21.21:57:22.448 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 35360 (started by hxy in D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app)
+26-10-21.21:57:22.448 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-10-21.21:57:23.250 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-21.21:57:23.253 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-21.21:57:23.306 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+26-10-21.21:57:23.615 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$cf94c1c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:57:23.857 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:57:24.034 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-21.21:57:24.522 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.21:57:24.534 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-21.21:57:24.564 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-21.21:57:26.750 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-21.21:57:26.799 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 4.741 seconds (JVM running for 5.531)
+26-10-21.21:57:27.198 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"771497644122","source":"s01","userId":"xfg03"}
+26-10-21.21:57:27.225 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-21.21:57:27.589 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-21.21:57:27.644 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-21.21:57:27.648 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-10-21.21:57:27.661 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg03 activityId:100123
+26-10-21.21:57:27.665 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg03 activityId:100123
+26-10-21.21:57:27.701 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg03 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"166968220476","teamId":"25685133","tradeOrderStatusEnumVO":"CREATE"}
+26-10-21.21:57:27.706 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","outTradeNo":"771497644122","source":"s01","userId":"xfg03"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"166968220476","tradeOrderStatus":0},"info":"成功"}
+26-10-21.21:57:27.721 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-21.21:57:27.768 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

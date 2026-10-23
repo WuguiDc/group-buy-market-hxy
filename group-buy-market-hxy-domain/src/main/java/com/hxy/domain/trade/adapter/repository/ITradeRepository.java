@@ -5,7 +5,10 @@ import com.hxy.domain.trade.model.aggregate.GroupBuyTeamSettlementAggregate;
 import com.hxy.domain.trade.model.entity.GroupBuyActivityEntity;
 import com.hxy.domain.trade.model.entity.GroupBuyTeamEntity;
 import com.hxy.domain.trade.model.entity.MarketPayOrderEntity;
+import com.hxy.domain.trade.model.entity.NotifyTaskEntity;
 import com.hxy.domain.trade.model.valobj.GroupBuyProgressVO;
+
+import java.util.List;
 
 public interface ITradeRepository {
     public MarketPayOrderEntity queryMarketPayOrderByOutTradeNo(String userId, String outTradeNo);
@@ -21,7 +24,17 @@ public interface ITradeRepository {
 
     GroupBuyTeamEntity queryGroupBuyTeamByTeamId(String teamId);
 
-    void settlementMarketPayOrder(GroupBuyTeamSettlementAggregate groupBuyTeamSettlementAggregate);
+    boolean settlementMarketPayOrder(GroupBuyTeamSettlementAggregate groupBuyTeamSettlementAggregate);
 
     boolean isSCBlackIntercepter(String source, String channel);
+
+    List<NotifyTaskEntity> queryUnExecuteNotifyTaskList();
+
+    List<NotifyTaskEntity> queryUnExecuteNotifyTaskList(String teamId);
+
+    int updateNotifyStatusSuccess(String teamId);
+
+    int updateNotifyStatusError(String teamId);
+
+    int updateNotifyStatusRetry(String teamId);
 }
