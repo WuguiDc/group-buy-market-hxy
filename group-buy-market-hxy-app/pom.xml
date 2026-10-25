@@ -11,6 +11,11 @@
 
     <packaging>jar</packaging>
 
+    <properties>
+        <!-- 保持默认跳过测试，同时允许 -DskipTests=false 执行指定 HTTP 合约测试 -->
+        <skipTests>true</skipTests>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -127,7 +132,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
-                    <skipTests>true</skipTests>
+                    <skipTests>${skipTests}</skipTests>
                     <testFailureIgnore>false</testFailureIgnore>
                     <includes>
                         <include>**/*Test.java</include>

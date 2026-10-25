@@ -1,9 +1,7 @@
 package com.hxy.infrastructure.dao.po;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.hxy.infrastructure.dao.po.base.Page;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -13,11 +11,12 @@ import java.util.Date;
  * @description 用户拼单明细
  * @create 2025-01-11 08:42
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroupBuyOrderList {
+public class GroupBuyOrderList extends Page {
 
     /** 自增ID */
     private Long id;
@@ -43,6 +42,8 @@ public class GroupBuyOrderList {
     private BigDecimal originalPrice;
     /** 折扣金额 */
     private BigDecimal deductionPrice;
+    /** 支付金额 */
+    private BigDecimal payPrice;
     /** 状态；0初始锁定、1消费完成 */
     private Integer status;
     /** 外部交易单号-确保外部调用唯一幂等 */

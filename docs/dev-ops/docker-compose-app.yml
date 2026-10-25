@@ -1,27 +1,84 @@
-# /usr/local/bin/docker-compose -f /docs/dev-ops/environment/environment-docker-compose-2.4.yml up -d
-version: '3.8'
-# docker-compose -f docker-compose-app.yml up -d
-# 你需要修改system为你自身系统的仓库名
+# 仅部署本项目的应用和 Nginx，复用现有 MySQL/Redis 与外部网络。
 services:
   group-buy-market-hxy:
-    image: system/group-buy-market-hxy:1.0-SNAPSHOT
+    image: ${APP_IMAGE:-system/group-buy-market-hxy-app:1.0-SNAPSHOT}
+    build:
+      context: ../..
+      dockerfile: group-buy-market-hxy-app/Dockerfile.build
+      args:
+        JAVA_BASE_IMAGE: ${JAVA_BASE_IMAGE:-eclipse-temurin:8-jre}
+        MAVEN_BASE_IMAGE: ${MAVEN_BASE_IMAGE:-maven:3.9-eclipse-temurin-8}
     container_name: group-buy-market-hxy
-    restart: on-failure
+    restart: unless-stopped
     ports:
-      - "8091:8091"
+      - "127.0.0.1:${APP_PORT:-8091}:8091"
     environment:
-      - TZ=PRC
-      - SERVER_PORT=8091
+      TZ: Asia/Shanghai
+      SERVER_PORT: "8091"
+      SPRING_PROFILES_ACTIVE: dev
+      SPRING_DATASOURCE_USERNAME: ${MYSQL_USER:-root}
+      SPRING_DATASOURCE_PASSWORD: ${MYSQL_PASSWORD:?请在 docs/dev-ops/.env 填写现有 MySQL 密码}
+      SPRING_DATASOURCE_URL: jdbc:mysql://${MYSQL_HOST:-mysql}:3306/${MYSQL_DATABASE:-group_buy_market}?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: com.mysql.cj.jdbc.Driver
+      REDIS_SDK_CONFIG_HOST: ${REDIS_HOST:-redis}
+      REDIS_SDK_CONFIG_PORT: "6379"
+      JAVA_TOOL_OPTIONS: ${JAVA_TOOL_OPTIONS:--Xms128m -Xmx512m -Dfile.encoding=UTF-8}
     volumes:
-      - ./log:/data/log
+      - app-logs:/app/data/log
+    healthcheck:
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/8091"]
+      interval: 5s
+      timeout: 3s
+      retries: 24
+      start_period: 30s
     logging:
-      driver: "json-file"
+      driver: json-file
       options:
         max-size: "10m"
         max-file: "3"
     networks:
-      - my-network
+      - backend
+
+  nginx:
+    image: ${NGINX_IMAGE:-nginx:stable-alpine}
+    container_name: group-buy-market-hxy-nginx
+    restart: unless-stopped
+    ports:
+      - "${FRONT_BIND:-127.0.0.1}:${FRONT_PORT:-80}:80"
+    volumes:
+      - type: bind
+        source: ./nginx/html
+        target: /usr/share/nginx/html
+        read_only: true
+        bind:
+          create_host_path: false
+      # 挂载配置目录，避免 WSL/Docker 重启时单文件挂载出现文件/目录类型冲突。
+      - type: bind
+        source: ./nginx/conf.d
+        target: /etc/nginx/conf.d
+        read_only: true
+        bind:
+          create_host_path: false
+    depends_on:
+      group-buy-market-hxy:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - backend
 
 networks:
-  my-network:
-    driver: bridge
+  backend:
+    external: true
+    name: ${DOCKER_NETWORK:-dev-ops_my-network}
+
+volumes:
+  app-logs:

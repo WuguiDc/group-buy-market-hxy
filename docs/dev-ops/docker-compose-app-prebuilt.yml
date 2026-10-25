@@ -1,0 +1,6 @@
+# 与 docker-compose-app.yml 叠加，仅将镜像构建切换为已打包的本地 JAR。
+services:
+  group-buy-market-hxy:
+    build:
+      context: ../../group-buy-market-hxy-app
+      dockerfile: Dockerfile

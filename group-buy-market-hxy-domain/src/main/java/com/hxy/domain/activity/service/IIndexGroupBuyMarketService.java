@@ -3,6 +3,10 @@ package com.hxy.domain.activity.service;
 
 import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
+import com.hxy.domain.activity.model.entity.UserGroupBuyOrderDetailEntity;
+import com.hxy.domain.activity.model.valobj.TeamStatisticVO;
+
+import java.util.List;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -13,4 +17,7 @@ public interface IIndexGroupBuyMarketService {
 
     TrialBalanceEntity indexMarketTrial(MarketProductEntity marketProductEntity) throws Exception;
 
+    List<UserGroupBuyOrderDetailEntity> queryInProgressUserGroupBuyOrderDetailList(Long activityId, String userId, Integer ownerCount, Integer randomCount);
+
+    TeamStatisticVO queryTeamStatisticByActivityId(Long activityId) throws Exception;
 }

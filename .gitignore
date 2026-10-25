@@ -37,3 +37,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Docker 部署的本地配置，包含现有数据库密码。
+docs/dev-ops/.env

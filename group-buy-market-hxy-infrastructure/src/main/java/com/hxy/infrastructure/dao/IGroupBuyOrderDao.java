@@ -3,6 +3,10 @@ package com.hxy.infrastructure.dao;
 
 import com.hxy.infrastructure.dao.po.GroupBuyOrder;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+import java.util.Set;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -25,4 +29,13 @@ public interface IGroupBuyOrderDao {
     int updateAddCompleteCount(String teamId);
 
     int updateOrderStatus2COMPLETE(String teamId);
+
+    List<GroupBuyOrder> queryGroupBuyProgressByTeamIds(@Param("teamIds") Set<String> teamIds);
+
+    Integer queryAllTeamCount(@Param("teamIds") Set<String> teamIds);
+
+    Integer queryAllTeamCompleteCount(@Param("teamIds") Set<String> teamIds);
+
+    Integer queryAllUserCount(@Param("teamIds") Set<String> teamIds);
+
 }

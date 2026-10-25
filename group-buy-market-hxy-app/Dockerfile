@@ -1,17 +1,9 @@
-# 基础镜像
-FROM openjdk:8-jre-slim
-
-# 作者
-MAINTAINER xiaofuge
-
-# 配置
-ENV PARAMS=""
-
-# 时区
-ENV TZ=PRC
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-# 添加应用
-ADD target/group-buy-market-hxy-app.jar /group-buy-market-hxy-app.jar
-
-ENTRYPOINT ["sh","-c","java -jar $JAVA_OPTS /group-buy-market-hxy-app.jar $PARAMS"]
+# 已在 Windows/WSL 完成 Maven 打包时使用的快速构建入口。
+ARG JAVA_BASE_IMAGE=eclipse-temurin:8-jre
+FROM ${JAVA_BASE_IMAGE}
+WORKDIR /app
+ENV TZ=Asia/Shanghai
+COPY target/group-buy-market-hxy-app.jar /app/app.jar
+EXPOSE 8091
+# JAVA_TOOL_OPTIONS 由 JVM 读取，避免旧脚本把 JVM 参数放在 -jar 后面。
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]

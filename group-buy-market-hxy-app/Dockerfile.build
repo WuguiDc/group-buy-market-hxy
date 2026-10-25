@@ -1,0 +1,14 @@
+# 无需在 WSL 安装 JDK/Maven，直接从当前工程源码构建。
+ARG MAVEN_BASE_IMAGE=maven:3.9-eclipse-temurin-8
+ARG JAVA_BASE_IMAGE=eclipse-temurin:8-jre
+FROM ${MAVEN_BASE_IMAGE} AS builder
+WORKDIR /workspace
+COPY . .
+RUN mvn -B -ntp -pl group-buy-market-hxy-app -am package -Dmaven.test.skip=true
+
+FROM ${JAVA_BASE_IMAGE}
+WORKDIR /app
+ENV TZ=Asia/Shanghai
+COPY --from=builder /workspace/group-buy-market-hxy-app/target/group-buy-market-hxy-app.jar /app/app.jar
+EXPOSE 8091
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
