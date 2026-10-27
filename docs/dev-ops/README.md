@@ -1,5 +1,7 @@
 # WSL Docker 部署
 
+最新的商城对接与本地 IDEA 联调方式见 [SPAY-INTEGRATION.md](SPAY-INTEGRATION.md)。下面保留原 Docker 部署操作，本次本地源码修改无需执行。
+
 部署对象为当前 `group-buy-market-hxy`，前端使用 Nginx，后端使用 Java 8 容器。复用本机已经运行的 `mysql`、`redis` 和 `dev-ops_my-network` 网络。
 
 ## 原脚本判断

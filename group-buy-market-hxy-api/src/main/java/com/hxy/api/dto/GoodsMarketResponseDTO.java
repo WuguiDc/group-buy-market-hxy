@@ -21,6 +21,9 @@ import java.util.concurrent.TimeUnit;
 @NoArgsConstructor
 public class GoodsMarketResponseDTO {
 
+    /** 当前商品营销试算命中的活动ID，空队伍时开团也使用此值 */
+    private Long activityId;
+
     // 商品信息
     private Goods goods;
     // 组队信息（1个个人的置顶、2个随机的「获取10个，随机取2个」）

@@ -82,6 +82,35 @@ services:
       redis:
         condition: service_healthy
 
+  # RabbitMQ: AMQP 5672, management UI 15672, admin/admin
+  rabbitmq:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/rabbitmq:3.12.9
+    container_name: rabbitmq
+    hostname: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      TZ: Asia/Shanghai
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    command: rabbitmq-server
+    volumes:
+      - ./rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins:ro
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    networks:
+      - my-network
+
+volumes:
+  rabbitmq-data:
+
 networks:
   my-network:
     driver: bridge

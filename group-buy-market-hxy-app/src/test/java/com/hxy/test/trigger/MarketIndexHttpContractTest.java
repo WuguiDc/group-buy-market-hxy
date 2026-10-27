@@ -26,6 +26,24 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 public class MarketIndexHttpContractTest {
     @Test
+    public void emptyTeamsStillReturnTheTrialActivityId() throws Exception {
+        IIndexGroupBuyMarketService service = mock(IIndexGroupBuyMarketService.class);
+        when(service.indexMarketTrial(any())).thenReturn(TrialBalanceEntity.builder()
+                .goodsId("9890001").originalPrice(new BigDecimal("100.00"))
+                .deductionPrice(new BigDecimal("10.00")).payPrice(new BigDecimal("90.00"))
+                .groupBuyActivityDiscountVO(GroupBuyActivityDiscountVO.builder().activityId(998877L).build()).build());
+        when(service.queryInProgressUserGroupBuyOrderDetailList(998877L, "new-user", 1, 2)).thenReturn(Collections.emptyList());
+        when(service.queryTeamStatisticByActivityId(998877L)).thenReturn(new TeamStatisticVO(0, 0, 0));
+        MarketIndexController controller = new MarketIndexController();
+        ReflectionTestUtils.setField(controller, "indexGroupBuyMarketService", service);
+        MockMvcBuilders.standaloneSetup(controller).build()
+                .perform(post("/api/v1/gbm/index/query_group_buy_market_config").contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"userId\":\"new-user\",\"source\":\"s01\",\"channel\":\"c01\",\"goodsId\":\"9890001\"}"))
+                .andExpect(status().isOk()).andExpect(jsonPath("$.data.activityId").value(998877))
+                .andExpect(jsonPath("$.data.teamList").isEmpty());
+    }
+
+    @Test
     public void marketReturnsPricesAndOwnerTradeStatus() throws Exception {
         IIndexGroupBuyMarketService service = mock(IIndexGroupBuyMarketService.class);
         when(service.indexMarketTrial(any())).thenReturn(TrialBalanceEntity.builder()
@@ -44,6 +62,7 @@ public class MarketIndexHttpContractTest {
         mvc.perform(post("/api/v1/gbm/index/query_group_buy_market_config").contentType(MediaType.APPLICATION_JSON)
                         .content("{\"userId\":\"xfg01\",\"source\":\"s01\",\"channel\":\"c01\",\"goodsId\":\"9890001\"}"))
                 .andExpect(status().isOk()).andExpect(jsonPath("$.code").value("0000"))
+                .andExpect(jsonPath("$.data.activityId").value(100123))
                 .andExpect(jsonPath("$.data.goods.payPrice").value(89.75))
                 .andExpect(jsonPath("$.data.teamStatistic.allTeamUserCount").value(9))
                 .andExpect(jsonPath("$.data.teamList[0].tradeOrderStatus").value(1))

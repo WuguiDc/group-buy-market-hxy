@@ -1,113 +1,609 @@
-26-10-25.14:52:28.045 [main            ] INFO  Application            - Starting Application using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 1600 (D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
-26-10-25.14:52:28.047 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-26-10-25.14:52:28.888 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-10-25.14:52:28.889 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-10-25.14:52:28.932 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
-26-10-25.14:52:29.138 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f2f28660] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.14:52:29.179 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.14:52:29.294 [main            ] INFO  Version                - Redisson 3.26.0
-26-10-25.14:52:29.900 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-10-25.14:52:29.911 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-10-25.14:52:29.970 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.14:52:30.168 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
-26-10-25.14:52:30.174 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
-26-10-25.14:52:30.174 [main            ] INFO  StandardService        - Starting service [Tomcat]
-26-10-25.14:52:30.174 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-26-10-25.14:52:30.287 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-26-10-25.14:52:30.287 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2208 ms
-26-10-25.14:52:31.222 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-10-25.14:52:31.240 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
-26-10-25.14:52:31.242 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8091 is already in use
-26-10-25.14:52:31.256 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8091"]
-26-10-25.14:52:31.256 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-26-10-25.14:52:31.259 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8091"]
-26-10-25.14:52:31.259 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8091"]
-26-10-25.14:52:31.266 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+26-10-26.16:54:25.492 [main            ] INFO  Application            - Starting Application using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 47768 (D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
+26-10-26.16:54:25.494 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-10-26.16:54:26.293 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-26.16:54:26.295 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-26.16:54:26.334 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+26-10-26.16:54:26.518 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9403a28a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.16:54:26.561 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.16:54:26.679 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-26.16:54:27.319 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-26.16:54:27.330 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-26.16:54:27.384 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.16:54:27.569 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-10-26.16:54:27.574 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-10-26.16:54:27.575 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-10-26.16:54:27.575 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-10-26.16:54:27.689 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-10-26.16:54:27.689 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2162 ms
+26-10-26.16:54:28.772 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-26.16:54:28.794 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-10-26.16:54:28.802 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-10-26.16:54:28.814 [main            ] INFO  Application            - Started Application in 3.704 seconds (JVM running for 4.727)
+26-10-26.16:54:29.125 [RMI TCP Connection(2)-192.168.56.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-10-26.16:54:29.125 [RMI TCP Connection(2)-192.168.56.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-10-26.16:54:29.126 [RMI TCP Connection(2)-192.168.56.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-10-26.16:54:29.127 [RMI TCP Connection(1)-192.168.56.1] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-26.16:54:29.436 [RMI TCP Connection(1)-192.168.56.1] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-26.16:54:30.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:54:30.070 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:54:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:54:45.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:55:00.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:55:00.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:55:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:55:15.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:55:30.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:55:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:55:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:55:45.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:56:00.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:56:00.027 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:56:15.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:56:15.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:56:30.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:56:30.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:56:45.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:56:45.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:57:00.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:57:00.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:57:15.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:57:15.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:57:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:57:30.027 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:57:45.017 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:57:45.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:58:00.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:58:00.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:58:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:58:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:58:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:58:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:58:45.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:58:45.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:59:00.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:59:00.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:59:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:59:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:59:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:59:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.16:59:45.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.16:59:45.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:00:00.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:00:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:00:00.175 [http-nio-8091-exec-1] INFO  MarketTradeController  - 营销交易锁单:xiaofuge15 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8080/api/v1/test/group_buy_notify","outTradeNo":"787555253285","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:00:00.203 [http-nio-8091-exec-1] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-26.17:00:00.204 [http-nio-8091-exec-1] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:00:00.213 [http-nio-8091-exec-1] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge15 activityId:100123
+26-10-26.17:00:00.217 [http-nio-8091-exec-1] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xiaofuge15 activityId:100123
+26-10-26.17:00:00.251 [http-nio-8091-exec-1] INFO  MarketTradeController  - 交易锁单记录(新):xiaofuge15 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"952177903975","originalPrice":100.00,"payPrice":90.00,"teamId":"87777385","tradeOrderStatusEnumVO":"CREATE"}
+26-10-26.17:00:15.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:00:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:00:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:00:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:00:45.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:00:45.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:01:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:01:00.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:01:15.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:01:15.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:01:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:01:30.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:01:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:01:45.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:02:00.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:02:00.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:02:15.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:02:15.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:02:30.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:02:30.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:02:45.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:02:45.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:03:00.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:03:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:03:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:03:15.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:03:30.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:03:30.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:03:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:03:45.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:04:00.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:04:00.022 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:04:15.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:04:15.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:04:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:04:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:04:45.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:04:45.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:05:00.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:05:00.032 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:05:15.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:05:15.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:05:30.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:05:30.023 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:05:45.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:05:45.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:06:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:06:00.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:06:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:06:15.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:06:30.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:06:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:06:45.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:06:45.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:07:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:07:00.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:07:15.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:07:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:07:30.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:07:30.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:07:45.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:07:45.025 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:08:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:08:00.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:08:15.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:08:15.030 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:08:30.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:08:30.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:08:45.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:08:45.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:09:00.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:09:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:09:15.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:09:15.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:09:30.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:09:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:09:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:09:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:10:00.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:10:00.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:10:15.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:10:15.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:10:30.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:10:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:10:45.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:10:45.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:11:00.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:11:00.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:11:15.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:11:15.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:11:30.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:11:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:11:45.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:11:45.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:12:00.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:12:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:12:15.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:12:15.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:12:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:12:30.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:12:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:12:45.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:13:00.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:13:00.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:13:15.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:13:15.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:13:27.267 [http-nio-8091-exec-3] INFO  MarketTradeController  - 营销交易锁单:xiaofuge15 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8080/api/v1/test/group_buy_notify","outTradeNo":"391940723923","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:13:27.275 [http-nio-8091-exec-3] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-26.17:13:27.276 [http-nio-8091-exec-3] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:13:27.278 [http-nio-8091-exec-3] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge15 activityId:100123
+26-10-26.17:13:27.280 [http-nio-8091-exec-3] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xiaofuge15 activityId:100123
+26-10-26.17:13:27.283 [http-nio-8091-exec-3] ERROR MarketTradeController  - 营销交易锁单业务异常:xiaofuge15 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8080/api/v1/test/group_buy_notify","outTradeNo":"391940723923","source":"s01","userId":"xiaofuge15"}
+com.hxy.types.exception.AppException: null
+	at com.hxy.domain.trade.service.lock.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:30)
+	at com.hxy.domain.trade.service.lock.filter.UserTakeLimitRuleFilter.apply(UserTakeLimitRuleFilter.java:16)
+	at com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList.apply(BusinessLinkedList.java:22)
+	at com.hxy.domain.trade.service.lock.TradeLockOrderService.lockMarketPayOrder(TradeLockOrderService.java:37)
+	at com.hxy.trigger.http.MarketTradeController.lockMarketPayOrder(MarketTradeController.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+26-10-26.17:13:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:13:30.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:13:45.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:13:45.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:14:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:14:00.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:14:15.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:14:15.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:14:15.166 [http-nio-8091-exec-5] INFO  MarketTradeController  - 营销交易锁单:xiaofuge15 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8080/api/v1/test/group_buy_notify","outTradeNo":"391940723923","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:14:15.171 [http-nio-8091-exec-5] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-26.17:14:15.171 [http-nio-8091-exec-5] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:14:15.175 [http-nio-8091-exec-5] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge15 activityId:100123
+26-10-26.17:14:15.177 [http-nio-8091-exec-5] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xiaofuge15 activityId:100123
+26-10-26.17:14:15.192 [http-nio-8091-exec-5] INFO  MarketTradeController  - 交易锁单记录(新):xiaofuge15 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"866842750280","originalPrice":100.00,"payPrice":90.00,"teamId":"22648925","tradeOrderStatusEnumVO":"CREATE"}
+26-10-26.17:14:30.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:14:30.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:14:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:14:45.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:15:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:15:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:15:15.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:15:15.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:15:30.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:15:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:15:45.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:15:45.026 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:16:00.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:16:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:16:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:16:15.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:16:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:16:30.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:16:45.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:16:45.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:17:00.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:17:00.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:17:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:17:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:17:30.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:17:30.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:17:45.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:17:45.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:18:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:18:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:18:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:18:15.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:18:30.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:18:30.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:18:45.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:18:45.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:19:00.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:19:00.020 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:19:15.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:19:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:19:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:19:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:19:45.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:19:45.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:20:00.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:20:00.003 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:20:15.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:20:15.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:20:30.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:20:30.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:20:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:20:45.018 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:21:00.004 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:21:00.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:21:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:21:15.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:21:30.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:21:30.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:21:45.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:21:45.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:22:00.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:22:00.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:22:15.015 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:22:15.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:22:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:22:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:22:45.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:22:45.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:23:00.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:23:00.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:23:15.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:23:15.021 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:23:30.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:23:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:23:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:23:45.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:24:00.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:24:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:24:15.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:24:15.013 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:24:30.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:24:30.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:24:45.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:24:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:25:00.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:25:00.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:25:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:25:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:25:30.009 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:25:30.015 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:25:45.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:25:45.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:26:00.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:26:00.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:26:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:26:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:26:30.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:26:30.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:26:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:26:45.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:27:00.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:27:00.006 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:27:15.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:27:15.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:27:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:27:30.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:27:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:27:45.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:28:00.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:28:00.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:28:15.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:28:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:28:30.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:28:30.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:28:45.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:28:45.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:29:00.005 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:29:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:29:15.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:29:15.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:29:30.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:29:30.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:29:45.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:29:45.030 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:30:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:30:00.028 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:30:15.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:30:15.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:30:30.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:30:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:30:45.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:30:45.031 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:31:00.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:31:00.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:31:15.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:31:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:31:30.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:31:30.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:31:44.916 [http-nio-8091-exec-6] INFO  MarketTradeController  - 营销交易锁单:xiaofuge15 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8080/api/v1/test/group_buy_notify","outTradeNo":"193405900340","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:31:44.925 [http-nio-8091-exec-6] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-26.17:31:44.925 [http-nio-8091-exec-6] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xiaofuge15 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:31:44.927 [http-nio-8091-exec-6] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xiaofuge15 activityId:100123
+26-10-26.17:31:44.930 [http-nio-8091-exec-6] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xiaofuge15 activityId:100123
+26-10-26.17:31:44.943 [http-nio-8091-exec-6] INFO  MarketTradeController  - 交易锁单记录(新):xiaofuge15 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"322494154472","originalPrice":100.00,"payPrice":90.00,"teamId":"25030825","tradeOrderStatusEnumVO":"CREATE"}
+26-10-26.17:31:45.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:31:45.002 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:32:00.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:32:00.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:32:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:32:15.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:32:30.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:32:30.012 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:32:45.008 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:32:45.026 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:33:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:33:00.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:33:15.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:33:15.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:33:30.011 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:33:30.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:33:45.012 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:33:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:34:00.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:34:00.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:34:15.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:34:15.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:34:30.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:34:30.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:34:45.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:34:45.007 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:35:00.002 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:35:00.009 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:35:15.000 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:35:15.004 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:35:30.001 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:35:30.005 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:35:45.007 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:35:45.011 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:36:00.013 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:36:00.016 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:36:15.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:36:15.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:36:30.016 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:36:30.019 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:36:45.010 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:36:45.014 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:36:48.460 [http-nio-8091-exec-9] INFO  MarketTradeController  - 营销交易锁单:xiaofuge15 LockMarketPayOrderRequestDTO:{"channel":"c01","outTradeNo":"193405900340","source":"s01","userId":"xiaofuge15"}
+26-10-26.17:37:00.003 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:37:00.010 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:37:15.006 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:37:15.008 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:37:30.014 [scheduling-1    ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知任务
+26-10-26.17:37:30.017 [scheduling-1    ] INFO  GroupBuyNotifyJob      - 定时任务，回调通知拼团完结任务 result:{retryCount=0, successCount=0, waitCount=0, errorCount=0}
+26-10-26.17:37:42.337 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-26.17:37:42.353 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-26.19:11:54.443 [main            ] INFO  Application            - Starting Application using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 27288 (D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
+26-10-26.19:11:54.444 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-10-26.19:11:55.192 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-26.19:11:55.193 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-26.19:11:55.228 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+26-10-26.19:11:55.373 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f2f28660] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.19:11:55.410 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.19:11:55.557 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-26.19:12:07.286 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DCCValueBeanFactory' defined in file [D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes\com\hxy\config\DCCValueBeanFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/hxy/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+26-10-26.19:12:07.295 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-26-10-25.14:52:31.277 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8091 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8091 or configure this application to listen on another port.
-
-26-10-25.14:53:57.596 [main            ] INFO  Application            - Starting Application using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 35760 (D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
-26-10-25.14:53:57.597 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-26-10-25.14:53:58.336 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-10-25.14:53:58.337 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-10-25.14:53:58.367 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-26-10-25.14:53:58.516 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f2f28660] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.14:53:58.553 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.14:53:58.653 [main            ] INFO  Version                - Redisson 3.26.0
-26-10-25.14:53:59.184 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-10-25.14:53:59.194 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-10-25.14:53:59.241 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.14:53:59.370 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
-26-10-25.14:53:59.373 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
-26-10-25.14:53:59.373 [main            ] INFO  StandardService        - Starting service [Tomcat]
-26-10-25.14:53:59.373 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-26-10-25.14:53:59.487 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-26-10-25.14:53:59.487 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1860 ms
-26-10-25.14:54:00.321 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-10-25.14:54:00.341 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
-26-10-25.14:54:00.342 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8091 is already in use
-26-10-25.14:54:00.353 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8091"]
-26-10-25.14:54:00.354 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-26-10-25.14:54:00.356 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8091"]
-26-10-25.14:54:00.356 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8091"]
-26-10-25.14:54:00.362 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+26-10-26.19:12:07.309 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DCCValueBeanFactory' defined in file [D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes\com\hxy\config\DCCValueBeanFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/hxy/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:764)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.hxy.Application.main(Application.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/hxy/config/RedisClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 33 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:229)
+	at org.redisson.connection.MasterSlaveConnectionManager.connect(MasterSlaveConnectionManager.java:196)
+	at org.redisson.config.ConfigSupport.createConnectionManager(ConfigSupport.java:220)
+	at org.redisson.Redisson.<init>(Redisson.java:71)
+	at org.redisson.Redisson.create(Redisson.java:116)
+	at com.hxy.config.RedisClientConfig.redissonClient(RedisClientConfig.java:51)
+	at com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f2f28660.CGLIB$redissonClient$0(<generated>)
+	at com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f2f28660$$FastClassBySpringCGLIB$$5c7a43db.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f2f28660.redissonClient(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 34 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:225)
+	... 49 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:16379
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$1(ConnectionsHolder.java:183)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.connection.ConnectionsHolder.promiseFailure(ConnectionsHolder.java:218)
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$4(ConnectionsHolder.java:204)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at org.redisson.client.RedisClient$1$2.run(RedisClient.java:308)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: 127.0.0.1/127.0.0.1:16379
+	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
+	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
+	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
+	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
+	... 11 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: 127.0.0.1/127.0.0.1:16379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+26-10-26.20:46:43.072 [main            ] INFO  Application            - Starting Application using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 25980 (D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
+26-10-26.20:46:43.074 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-10-26.20:46:43.812 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-26.20:46:43.814 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-26.20:46:43.849 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+26-10-26.20:46:44.000 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$b1fd57e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.20:46:44.037 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.20:46:44.154 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-26.20:46:44.718 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-26.20:46:44.727 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-26.20:46:44.777 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-10-26.20:46:44.918 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-10-26.20:46:44.923 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-10-26.20:46:44.923 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-10-26.20:46:44.923 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-10-26.20:46:45.028 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-10-26.20:46:45.028 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1924 ms
+26-10-26.20:46:45.835 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-26.20:46:45.853 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-10-26.20:46:45.854 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8091 is already in use
+26-10-26.20:46:45.867 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8091"]
+26-10-26.20:46:45.867 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+26-10-26.20:46:45.870 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8091"]
+26-10-26.20:46:45.870 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8091"]
+26-10-26.20:46:45.876 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-26-10-25.14:54:00.370 [main            ] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8091 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8091 or configure this application to listen on another port.
-
-26-10-25.16:39:36.570 [main            ] INFO  Application            - Starting Application using Java 1.8.0_482 on LAPTOP-6GQTRL2S with PID 43080 (D:\code_java_2026_6\group-buy-market-hxy\group-buy-market-hxy-app\target\classes started by hxy in D:\code_java_2026_6\group-buy-market-hxy)
-26-10-25.16:39:36.572 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-26-10-25.16:39:37.329 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-10-25.16:39:37.331 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-10-25.16:39:37.362 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
-26-10-25.16:39:37.516 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [com.hxy.config.RedisClientConfig$$EnhancerBySpringCGLIB$$f2f28660] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.16:39:37.557 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-com.hxy.config.RedisClientConfigProperties' of type [com.hxy.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.16:39:37.653 [main            ] INFO  Version                - Redisson 3.26.0
-26-10-25.16:39:38.184 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-10-25.16:39:38.193 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-10-25.16:39:38.242 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-10-25.16:39:38.372 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
-26-10-25.16:39:38.376 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
-26-10-25.16:39:38.377 [main            ] INFO  StandardService        - Starting service [Tomcat]
-26-10-25.16:39:38.377 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-26-10-25.16:39:38.493 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-26-10-25.16:39:38.493 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1892 ms
-26-10-25.16:39:39.360 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-10-25.16:39:39.377 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
-26-10-25.16:39:39.378 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8091 is already in use
-26-10-25.16:39:39.395 [main            ] INFO  Http11NioProtocol      - Pausing ProtocolHandler ["http-nio-8091"]
-26-10-25.16:39:39.395 [main            ] INFO  StandardService        - Stopping service [Tomcat]
-26-10-25.16:39:39.397 [main            ] INFO  Http11NioProtocol      - Stopping ProtocolHandler ["http-nio-8091"]
-26-10-25.16:39:39.398 [main            ] INFO  Http11NioProtocol      - Destroying ProtocolHandler ["http-nio-8091"]
-26-10-25.16:39:39.406 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-26-10-25.16:39:39.418 [main            ] ERROR LoggingFailureAnalysisReporter - 
+26-10-26.20:46:45.884 [main            ] ERROR LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
