@@ -1,13 +1,14 @@
 package com.hxy.domain.activity.service;
 
 
+import cn.bugstack.wrench.design.framework.tree.StrategyHandler;
 import com.hxy.domain.activity.adapter.repository.IActivityRepository;
 import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
 import com.hxy.domain.activity.model.entity.UserGroupBuyOrderDetailEntity;
 import com.hxy.domain.activity.model.valobj.TeamStatisticVO;
 import com.hxy.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
-import com.hxy.types.design.framework.tree.StrategyHandler;
+
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

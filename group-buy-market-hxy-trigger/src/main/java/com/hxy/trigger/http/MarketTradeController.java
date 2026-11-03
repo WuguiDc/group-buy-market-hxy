@@ -13,6 +13,9 @@ import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.hxy.domain.activity.service.IIndexGroupBuyMarketService;
 import com.hxy.domain.trade.model.entity.*;
 import com.hxy.domain.trade.model.valobj.GroupBuyProgressVO;
+import com.hxy.domain.trade.model.valobj.NotifyConfigVO;
+import com.hxy.domain.trade.model.valobj.NotifyTypeEnumVO;
+import com.hxy.domain.trade.model.valobj.TradeOrderStatusEnumVO;
 import com.hxy.domain.trade.service.ITradeLockOrderService;
 import com.hxy.domain.trade.service.ITradeSettlementOrderService;
 import com.hxy.types.enums.ResponseCode;
@@ -50,12 +53,16 @@ public class MarketTradeController implements IMarketTradeService {
             Long activityId = lockMarketPayOrderRequestDTO.getActivityId();
             String outTradeNo = lockMarketPayOrderRequestDTO.getOutTradeNo();
             String teamId = lockMarketPayOrderRequestDTO.getTeamId();
-            String notifyUrl = lockMarketPayOrderRequestDTO.getNotifyUrl();
+            LockMarketPayOrderRequestDTO.NotifyConfigVO notifyConfigVO = lockMarketPayOrderRequestDTO.getNotifyConfigVO();
+
 
             log.info("营销交易锁单:{} LockMarketPayOrderRequestDTO:{}", userId, JSON.toJSONString(lockMarketPayOrderRequestDTO));
 
             if (StringUtils.isBlank(userId) || StringUtils.isBlank(source) || StringUtils.isBlank(channel)
-                    || StringUtils.isBlank(goodsId) || StringUtils.isBlank(outTradeNo) || null == activityId || StringUtils.isBlank(notifyUrl)) {
+                    || StringUtils.isBlank(goodsId) || StringUtils.isBlank(outTradeNo) || outTradeNo.length() != 12
+                    || activityId == null || activityId <= 0 || notifyConfigVO == null
+                    || !("HTTP".equals(notifyConfigVO.getNotifyType()) || "MQ".equals(notifyConfigVO.getNotifyType()))
+                    || ("HTTP".equals(notifyConfigVO.getNotifyType()) && StringUtils.isBlank(notifyConfigVO.getNotifyUrl()))) {
                 return Response.<LockMarketPayOrderResponseDTO>builder()
                         .code(ResponseCode.ILLEGAL_PARAMETER.getCode())
                         .info(ResponseCode.ILLEGAL_PARAMETER.getInfo())
@@ -64,7 +71,7 @@ public class MarketTradeController implements IMarketTradeService {
 
             // 查询 outTradeNo 是否已经存在交易记录
             MarketPayOrderEntity marketPayOrderEntity = tradeOrderService.queryNoPayMarketPayOrderByOutTradeNo(userId, outTradeNo);
-            if (null != marketPayOrderEntity) {
+            if (null != marketPayOrderEntity && TradeOrderStatusEnumVO.CREATE.equals(marketPayOrderEntity.getTradeOrderStatusEnumVO())) {
                 LockMarketPayOrderResponseDTO lockMarketPayOrderResponseDTO = LockMarketPayOrderResponseDTO.builder()
                         .orderId(marketPayOrderEntity.getOrderId())
                         .originalPrice(marketPayOrderEntity.getOriginalPrice())
@@ -81,10 +88,10 @@ public class MarketTradeController implements IMarketTradeService {
                         .build();
             }
 
-            if(null != teamId){
+            if(StringUtils.isNotBlank(teamId)){
                 GroupBuyProgressVO groupBuyProgressVO = tradeOrderService.queryGroupBuyProgress(teamId);
 
-                if(null != groupBuyProgressVO && Objects.equals(groupBuyProgressVO.getTargetCount(),groupBuyProgressVO.getLockCount())){
+                if(null == groupBuyProgressVO || groupBuyProgressVO.getLockCount() >= groupBuyProgressVO.getTargetCount()){
                     return Response.<LockMarketPayOrderResponseDTO>builder()
                             .code(ResponseCode.E0006.getCode())
                             .info(ResponseCode.E0006.getInfo())
@@ -101,6 +108,12 @@ public class MarketTradeController implements IMarketTradeService {
                     .build());
 
             GroupBuyActivityDiscountVO groupBuyActivityDiscountVO = trialBalanceEntity.getGroupBuyActivityDiscountVO();
+            if (!Objects.equals(activityId, groupBuyActivityDiscountVO.getActivityId())) {
+                throw new AppException(ResponseCode.ILLEGAL_PARAMETER);
+            }
+            if (Boolean.FALSE.equals(trialBalanceEntity.getIsEnable())) {
+                throw new AppException(ResponseCode.E0007);
+            }
 
             marketPayOrderEntity = tradeOrderService.lockMarketPayOrder(
                     UserEntity.builder().userId(userId).build(),
@@ -122,7 +135,11 @@ public class MarketTradeController implements IMarketTradeService {
                             .deductionPrice(trialBalanceEntity.getDeductionPrice())
                             .payPrice(trialBalanceEntity.getPayPrice())
                             .outTradeNo(outTradeNo)
-                            .notifyUrl(notifyUrl)
+                            .notifyConfigVO( NotifyConfigVO.builder()
+                                    .notifyType(NotifyTypeEnumVO.valueOf(notifyConfigVO.getNotifyType()) )
+                                    .notifyMQ(notifyConfigVO.getNotifyMQ())
+                                    .notifyUrl(notifyConfigVO.getNotifyUrl())
+                                    .build())
                             .build());
             log.info("交易锁单记录(新):{} marketPayOrderEntity:{}", userId, JSON.toJSONString(marketPayOrderEntity));
 

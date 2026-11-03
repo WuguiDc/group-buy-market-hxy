@@ -1,12 +1,13 @@
 package com.hxy.domain.activity.service.trial.factory;
 
 
+import cn.bugstack.wrench.design.framework.tree.StrategyHandler;
 import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.hxy.domain.activity.model.valobj.SkuVO;
 import com.hxy.domain.activity.service.trial.node.RootNode;
-import com.hxy.types.design.framework.tree.StrategyHandler;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

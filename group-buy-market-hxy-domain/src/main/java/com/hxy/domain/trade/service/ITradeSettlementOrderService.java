@@ -1,5 +1,6 @@
 package com.hxy.domain.trade.service;
 
+import com.hxy.domain.trade.model.entity.NotifyTaskEntity;
 import com.hxy.domain.trade.model.entity.TradePaySettlementEntity;
 import com.hxy.domain.trade.model.entity.TradePaySuccessEntity;
 
@@ -12,5 +13,7 @@ public interface ITradeSettlementOrderService {
     Map<String,Integer> execSettlementNotifyJob() throws Exception;
 
     Map<String,Integer> execSettlementNotifyJob(String teamId) throws Exception;
+
+    Map<String,Integer> execSettlementNotifyJob(NotifyTaskEntity notifyTaskEntity) throws Exception;
 
 }

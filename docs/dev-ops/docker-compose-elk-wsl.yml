@@ -1,0 +1,69 @@
+services:
+  elasticsearch:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/elasticsearch:7.17.28
+    container_name: elasticsearch
+    restart: always
+    environment:
+      cluster.name: docker-cluster
+      discovery.type: single-node
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+      xpack.security.enabled: "false"
+      TZ: Asia/Shanghai
+    ports:
+      - "127.0.0.1:9200:9200"
+      - "127.0.0.1:9300:9300"
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS 'http://localhost:9200/_cluster/health?wait_for_status=yellow&timeout=5s' >/dev/null"]
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 30s
+    networks:
+      elk:
+        aliases:
+          - es
+
+  logstash:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/logstash:7.17.28
+    container_name: logstash
+    restart: always
+    environment:
+      LS_JAVA_OPTS: "-Xms1024m -Xmx1024m"
+      TZ: Asia/Shanghai
+      MONITORING_ENABLED: "false"
+    volumes:
+      - ../logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+    ports:
+      - "127.0.0.1:4560:4560"
+      - "127.0.0.1:9600:9600"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - elk
+
+  kibana:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/kibana:7.17.28
+    container_name: kibana
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      I18N_LOCALE: zh-CN
+    volumes:
+      - ../kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+    ports:
+      - "127.0.0.1:5601:5601"
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    networks:
+      - elk
+
+volumes:
+  elasticsearch-data:
+
+networks:
+  elk:
+    driver: bridge

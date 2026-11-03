@@ -1,5 +1,6 @@
 package com.hxy.domain.trade.model.entity;
 
+import com.hxy.domain.trade.model.valobj.NotifyConfigVO;
 import com.hxy.types.enums.GroupBuyOrderEnumVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,7 +14,6 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GroupBuyTeamEntity {
-
 
     /** 拼单组队ID */
     private String teamId;
@@ -31,7 +31,7 @@ public class GroupBuyTeamEntity {
     private Date validStartTime;
     /** 拼团结束时间 - 拼团有效时长 */
     private Date validEndTime;
-    /** 回调通知地址 */
-    private String notifyUrl;
+    /** 回调配置 */
+    private NotifyConfigVO notifyConfigVO;
 
 }

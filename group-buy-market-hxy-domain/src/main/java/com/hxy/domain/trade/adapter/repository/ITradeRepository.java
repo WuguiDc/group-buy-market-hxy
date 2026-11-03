@@ -1,6 +1,7 @@
 package com.hxy.domain.trade.adapter.repository;
 
 import com.hxy.domain.trade.model.aggregate.GroupBuyOrderAggregate;
+import com.hxy.domain.trade.model.aggregate.GroupBuyRefundAggregate;
 import com.hxy.domain.trade.model.aggregate.GroupBuyTeamSettlementAggregate;
 import com.hxy.domain.trade.model.entity.GroupBuyActivityEntity;
 import com.hxy.domain.trade.model.entity.GroupBuyTeamEntity;
@@ -24,7 +25,7 @@ public interface ITradeRepository {
 
     GroupBuyTeamEntity queryGroupBuyTeamByTeamId(String teamId);
 
-    boolean settlementMarketPayOrder(GroupBuyTeamSettlementAggregate groupBuyTeamSettlementAggregate);
+    NotifyTaskEntity settlementMarketPayOrder(GroupBuyTeamSettlementAggregate groupBuyTeamSettlementAggregate);
 
     boolean isSCBlackIntercepter(String source, String channel);
 
@@ -37,4 +38,10 @@ public interface ITradeRepository {
     int updateNotifyStatusError(String teamId);
 
     int updateNotifyStatusRetry(String teamId);
+
+    boolean occupyTeamStock(String teamStockKey, String recoveryTeamStockKey, Integer target, Integer validTime);
+
+    void recoveryTeamStock(String recoveryTeamStockKey, Integer validTime);
+
+    void unpaid2Refund(GroupBuyRefundAggregate groupBuyRefundAggregate);
 }

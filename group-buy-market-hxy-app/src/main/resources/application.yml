@@ -3,3 +3,12 @@ spring:
     name: group-buy-market-hxy-app
   profiles:
     active: dev
+
+# Wrench 动态配置中心；保留原有 group_buy_market_dcc_ 配置键前缀。
+xfg:
+  wrench:
+    config:
+      system: group_buy_market_dcc
+      register:
+        host: ${redis.sdk.config.host:127.0.0.1}
+        port: ${redis.sdk.config.port:16379}

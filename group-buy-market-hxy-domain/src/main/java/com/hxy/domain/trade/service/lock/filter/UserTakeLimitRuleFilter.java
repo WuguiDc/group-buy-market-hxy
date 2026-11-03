@@ -5,7 +5,7 @@ import com.hxy.domain.trade.model.entity.GroupBuyActivityEntity;
 import com.hxy.domain.trade.model.entity.TradeLockRuleCommandEntity;
 import com.hxy.domain.trade.model.entity.TradeLockRuleFilterBackEntity;
 import com.hxy.domain.trade.service.lock.factory.TradeLockRuleFilterFactory;
-import com.hxy.types.design.framework.link.model2.handler.ILogicHandler;
+import cn.bugstack.wrench.design.framework.link.model2.handler.ILogicHandler;
 import com.hxy.types.enums.ResponseCode;
 import com.hxy.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -31,6 +31,7 @@ public class UserTakeLimitRuleFilter implements ILogicHandler<TradeLockRuleComma
         }
 
 
-        return TradeLockRuleFilterBackEntity.builder().userTakeOrderCount(count).build();
+        dynamicContext.setUserTakeOrderCount(count);
+        return next(requestParameter, dynamicContext);
     }
 }

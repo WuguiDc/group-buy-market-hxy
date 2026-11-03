@@ -18,6 +18,10 @@ public class NotifyTaskEntity {
 
     /** 拼单组队ID */
     private String teamId;
+    /** 回调类型 */
+    private String notifyType;
+    /** 回调消息 */
+    private String notifyMQ;
     /** 回调接口 */
     private String notifyUrl;
     /** 回调次数 */

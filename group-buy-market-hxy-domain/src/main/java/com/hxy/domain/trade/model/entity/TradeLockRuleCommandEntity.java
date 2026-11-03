@@ -14,4 +14,7 @@ public class TradeLockRuleCommandEntity {
 
     private String userId;
     private Long activityId;
+
+    /** 组队ID；为空表示首次开团 */
+    private String teamId;
 }

@@ -1,0 +1,765 @@
+26-10-28.19:44:03.471 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8091 is already in use
+26-10-28.19:44:03.542 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8091 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8091 or configure this application to listen on another port.
+
+26-10-28.19:44:21.690 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8091 is already in use
+26-10-28.19:44:21.735 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8091 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8091 or configure this application to listen on another port.
+
+26-10-28.19:58:42.924 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 12 common frames omitted
+26-10-28.19:58:47.241 [RMI TCP Connection(2)-192.168.56.1] WARN  RabbitHealthIndicator  - Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:94)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:88)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 51 common frames omitted
+26-10-28.19:58:50.019 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:58:52.064 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.19:58:59.203 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:59:01.262 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.19:59:08.413 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:59:10.471 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.19:59:17.579 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:59:19.647 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.19:59:26.782 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:59:28.835 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.19:59:35.987 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:59:38.042 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.19:59:45.175 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:59:47.234 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.19:59:54.382 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.19:59:56.450 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:00:03.581 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:00:05.612 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:00:12.746 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:00:14.788 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:00:21.898 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:00:23.951 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:00:31.064 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:00:33.111 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:00:40.253 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:00:42.296 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:00:49.432 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:00:51.461 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:00:58.604 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:01:00.647 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:01:07.757 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:01:09.824 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:01:16.959 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:01:19.028 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:01:26.192 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:01:28.257 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:01:35.399 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:01:37.458 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:01:44.604 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:01:46.658 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:01:53.784 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-21] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:01:55.831 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:02:02.975 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-22] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:02:05.039 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:02:12.155 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-23] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:02:14.217 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:02:21.339 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-24] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:02:23.399 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:02:30.526 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-25] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:02:32.573 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:02:39.696 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-26] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:02:41.758 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:02:48.891 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-27] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:02:50.954 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:02:58.100 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-28] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:03:00.155 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:03:07.280 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-29] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:03:09.336 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:03:16.479 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-30] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:03:18.516 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:03:25.651 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-31] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:03:27.722 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:03:34.836 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-32] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:03:36.853 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:03:44.000 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-33] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:03:46.055 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:03:53.181 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-34] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:03:55.251 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:04:02.371 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-35] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:04:04.408 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:04:11.538 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-36] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:04:13.594 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:04:20.732 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-37] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:04:22.788 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:04:29.925 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-38] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:04:31.983 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:04:39.145 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-39] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:04:41.189 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:04:48.318 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-40] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:04:50.364 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:04:57.478 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-41] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:04:59.519 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:05:06.661 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-42] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:05:08.692 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:05:15.793 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-43] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:05:17.867 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:05:24.972 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-44] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:05:27.034 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:05:34.183 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-45] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:05:36.225 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:05:43.365 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-46] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:05:45.411 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:05:52.532 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-47] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:05:54.604 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-48] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:06:01.727 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-48] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:06:03.779 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-49] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:06:10.925 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-49] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:06:12.957 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-50] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:06:20.069 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-50] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:06:22.106 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-51] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:06:29.307 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-51] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:06:31.380 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-52] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:06:38.508 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-52] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:06:40.551 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-53] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:06:47.695 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-53] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:06:49.753 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-54] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:06:56.898 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-54] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:06:58.940 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-55] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:07:06.131 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-55] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:07:08.154 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-56] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:07:15.261 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-56] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:07:17.288 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-57] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:07:24.410 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-57] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:07:26.465 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-58] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:07:33.623 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-58] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:07:35.679 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-59] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:07:42.795 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-59] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:07:44.851 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-60] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:07:51.949 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-60] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:07:53.983 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-61] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:08:01.084 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-61] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:08:03.138 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-62] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:08:10.257 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-62] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:08:12.313 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-63] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:08:19.484 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-63] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:08:21.539 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-64] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:08:28.661 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-64] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:08:30.693 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-65] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:08:37.834 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-65] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:08:39.867 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-66] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:08:47.010 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-66] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:08:49.072 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-67] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:08:56.207 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-67] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:08:58.278 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-68] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:09:05.416 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-68] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:09:07.474 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-69] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:09:14.619 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-69] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:09:16.687 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-70] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:09:23.861 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-70] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:09:25.886 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-71] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:09:32.983 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-71] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:09:35.025 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-72] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:09:42.173 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-72] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:09:44.245 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-73] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:09:48.349 [scheduling-1    ] ERROR EventPublisher         - 发送MQ消息失败 team_success message:{"teamId":"09926877","outTradeNoList":["788071948240"]}
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:09:48.361 [scheduling-1    ] ERROR TradePort              - 拼团通知发送失败 teamId:09926877
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:09:51.388 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-73] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:09:53.429 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-74] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:10:00.600 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-74] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:10:02.060 [scheduling-1    ] ERROR EventPublisher         - 发送MQ消息失败 team_success message:{"teamId":"09926877","outTradeNoList":["788071948240"]}
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:02.064 [scheduling-1    ] ERROR TradePort              - 拼团通知发送失败 teamId:09926877
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:04.096 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-75] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:10:11.211 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-75] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:10:13.282 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-76] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:10:17.383 [scheduling-1    ] ERROR EventPublisher         - 发送MQ消息失败 team_success message:{"teamId":"09926877","outTradeNoList":["788071948240"]}
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:17.390 [scheduling-1    ] ERROR TradePort              - 拼团通知发送失败 teamId:09926877
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:20.423 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-76] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:10:22.496 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-77] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:10:29.600 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-77] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:10:31.670 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-78] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:10:33.729 [scheduling-1    ] ERROR EventPublisher         - 发送MQ消息失败 team_success message:{"teamId":"09926877","outTradeNoList":["788071948240"]}
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:33.736 [scheduling-1    ] ERROR TradePort              - 拼团通知发送失败 teamId:09926877
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:40.854 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-78] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:10:42.883 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-79] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:10:47.043 [scheduling-1    ] ERROR EventPublisher         - 发送MQ消息失败 team_success message:{"teamId":"09926877","outTradeNoList":["788071948240"]}
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:47.048 [scheduling-1    ] ERROR TradePort              - 拼团通知发送失败 teamId:09926877
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2210)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1102)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1208)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1198)
+	at com.hxy.infrastructure.event.EventPublisher.publish(EventPublisher.java:27)
+	at com.hxy.infrastructure.adapter.port.TradePort.groupBuyNotify(TradePort.java:50)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:117)
+	at com.hxy.domain.trade.service.settlement.TradeSettlementOrderService.execSettlementNotifyJob(TradeSettlementOrderService.java:106)
+	at com.hxy.trigger.job.GroupBuyNotifyJob.exec(GroupBuyNotifyJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 25 common frames omitted
+26-10-28.20:10:50.000 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-79] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:10:52.054 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-80] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:10:59.162 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-80] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:11:01.209 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-81] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:11:08.400 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-81] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:11:10.460 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-82] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:11:17.581 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-82] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:11:19.641 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-83] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:11:26.742 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-83] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:11:28.787 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-84] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:11:35.924 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-84] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:11:37.970 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-85] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:11:45.075 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-85] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:11:47.131 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-86] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:11:54.257 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-86] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:11:56.314 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-87] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:12:03.444 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-87] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:12:05.501 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-88] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:12:12.606 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-88] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:12:14.651 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-89] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:12:21.771 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-89] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:12:23.832 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-90] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:12:30.941 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-90] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:12:32.984 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-91] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+26-10-28.20:12:40.131 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-91] WARN  SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+26-10-28.20:12:40.142 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-92] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).

@@ -1,0 +1,78 @@
+# WSL: docker compose -p monitoring -f docker-compose-grafana-wsl.yml up -d
+services:
+  prometheus:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/prometheus:2.47.2
+    container_name: prometheus
+    restart: always
+    ports:
+      - "127.0.0.1:9090:9090"
+    volumes:
+      - type: bind
+        source: ./prometheus/prometheus-wsl.yml
+        target: /etc/prometheus/prometheus.yml
+        read_only: true
+        bind:
+          create_host_path: false
+      - prometheus-data:/prometheus
+    networks:
+      - backend
+
+  grafana:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/grafana:10.2.0
+    container_name: grafana
+    restart: always
+    ports:
+      - "127.0.0.1:4000:3000"
+    environment:
+      TZ: Asia/Shanghai
+      GF_SERVER_HTTP_PORT: "3000"
+      GF_DATABASE_TYPE: mysql
+      GF_DATABASE_HOST: mysql:3306
+      GF_DATABASE_NAME: grafana
+      GF_DATABASE_USER: ${MYSQL_USER:-root}
+      GF_DATABASE_PASSWORD: ${MYSQL_PASSWORD:?Set MYSQL_PASSWORD in docs/dev-ops/.env}
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - type: bind
+        source: ./grafana/grafana.ini
+        target: /etc/grafana/grafana.ini
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./grafana/provisioning/datasources
+        target: /etc/grafana/provisioning/datasources
+        read_only: true
+        bind:
+          create_host_path: false
+    depends_on:
+      - prometheus
+    networks:
+      - backend
+
+  grafana-mcp:
+    profiles: ["mcp"]
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/grafana-mcp:latest
+    container_name: grafana-mcp
+    restart: unless-stopped
+    command: ["-t", "sse", "-sse-address", "0.0.0.0:8000"]
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      GRAFANA_URL: http://grafana:3000
+      GRAFANA_SERVICE_ACCOUNT_TOKEN: ${GRAFANA_SERVICE_ACCOUNT_TOKEN:-}
+      # Compatibility with older MCP images.
+      GRAFANA_API_KEY: ${GRAFANA_SERVICE_ACCOUNT_TOKEN:-}
+    depends_on:
+      - grafana
+    networks:
+      - backend
+
+volumes:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  backend:
+    external: true
+    name: dev-ops_my-network

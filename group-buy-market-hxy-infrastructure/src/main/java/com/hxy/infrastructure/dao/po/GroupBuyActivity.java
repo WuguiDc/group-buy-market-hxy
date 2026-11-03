@@ -49,4 +49,10 @@ public class GroupBuyActivity {
     /** 更新时间 */
     private Date updateTime;
 
+
+    public static String cacheRedisKey(Long activityId){
+
+        return "com.hxy.infrastructure.dao.po.GroupBuyActivity_"+activityId;
+    }
+
 }

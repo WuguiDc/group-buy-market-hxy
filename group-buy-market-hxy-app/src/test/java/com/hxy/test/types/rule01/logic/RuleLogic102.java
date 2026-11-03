@@ -1,7 +1,7 @@
 package com.hxy.test.types.rule01.logic;
 
 import com.hxy.test.types.rule02.factory.Rule02TradeRuleFactory;
-import com.hxy.types.design.framework.link.model1.AbstractLogicLink;
+import cn.bugstack.wrench.design.framework.link.model1.AbstractLogicLink;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

@@ -1,11 +1,12 @@
 package com.hxy.domain.activity.service.trial.node;
 
+import cn.bugstack.wrench.design.framework.tree.StrategyHandler;
 import com.hxy.domain.activity.model.entity.MarketProductEntity;
 import com.hxy.domain.activity.model.entity.TrialBalanceEntity;
 import com.hxy.domain.activity.model.valobj.GroupBuyActivityDiscountVO;
 import com.hxy.domain.activity.service.trial.AbstractGroupBuyMarketSupport;
 import com.hxy.domain.activity.service.trial.factory.DefaultActivityStrategyFactory;
-import com.hxy.types.design.framework.tree.StrategyHandler;
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;

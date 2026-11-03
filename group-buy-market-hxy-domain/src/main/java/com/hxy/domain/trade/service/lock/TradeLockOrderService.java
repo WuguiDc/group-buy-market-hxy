@@ -6,7 +6,7 @@ import com.hxy.domain.trade.model.entity.*;
 import com.hxy.domain.trade.model.valobj.GroupBuyProgressVO;
 import com.hxy.domain.trade.service.ITradeLockOrderService;
 import com.hxy.domain.trade.service.lock.factory.TradeLockRuleFilterFactory;
-import com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList;
+import cn.bugstack.wrench.design.framework.link.model2.chain.BusinessLinkedList;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -38,6 +38,7 @@ public class TradeLockOrderService implements ITradeLockOrderService {
                         .builder()
                         .activityId(payActivityEntity.getActivityId())
                         .userId(userEntity.getUserId())
+                        .teamId(payActivityEntity.getTeamId())
                         .build(),
                 new TradeLockRuleFilterFactory.DynamicContext()
         );
@@ -51,6 +52,11 @@ public class TradeLockOrderService implements ITradeLockOrderService {
                 .userTakeOrderCount(userTakeOrderCount)
                 .build();
         //锁定聚合对象
-        return repository.lockMarketPayOrder(groupBuyOrderAggregate);
+        try {
+            return repository.lockMarketPayOrder(groupBuyOrderAggregate);
+        } catch (Exception e) {
+            repository.recoveryTeamStock(tradeLockRuleFilterBackEntity.getRecoveryTeamStockKey(), payActivityEntity.getValidTime());
+            throw e;
+        }
     }
 }

@@ -3,15 +3,13 @@ package com.hxy.domain.trade.service.settlement;
 import com.alibaba.fastjson.JSON;
 import com.hxy.domain.trade.adapter.port.ITradePort;
 import com.hxy.domain.trade.adapter.repository.ITradeRepository;
-import com.hxy.domain.trade.model.aggregate.GroupBuyOrderAggregate;
 import com.hxy.domain.trade.model.aggregate.GroupBuyTeamSettlementAggregate;
 import com.hxy.domain.trade.model.entity.*;
 import com.hxy.domain.trade.service.ITradeSettlementOrderService;
 import com.hxy.domain.trade.service.settlement.factory.TradeSettlementRuleFilterFactory;
-import com.hxy.types.design.framework.link.model2.chain.BusinessLinkedList;
+import cn.bugstack.wrench.design.framework.link.model2.chain.BusinessLinkedList;
 import com.hxy.types.enums.NotifyTaskHTTPEnumVO;
 import lombok.extern.slf4j.Slf4j;
-import org.checkerframework.checker.nullness.qual.NonNull;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -19,6 +17,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.RejectedExecutionException;
 
 @Service
 @Slf4j
@@ -28,6 +28,9 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
     private ITradeRepository repository;
     @Resource
     private ITradePort port;
+    @Resource
+    private ThreadPoolExecutor threadPoolExecutor;
+
 
     @Resource
     private BusinessLinkedList<TradeSettlementRuleCommandEntity,
@@ -46,11 +49,9 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
                 .outTradeTime(tradePaySuccessEntity.getOutTradeTime())
                 .build(), new TradeSettlementRuleFilterFactory.DynamicContext());
 
-        String teamId = tradeSettlementRuleFilterBackEntity.getTeamId();
-
         //2.查询拼团状态
         GroupBuyTeamEntity groupBuyTeamEntity = GroupBuyTeamEntity.builder()
-                .teamId(teamId)
+                .teamId(tradeSettlementRuleFilterBackEntity.getTeamId())
                 .activityId(tradeSettlementRuleFilterBackEntity.getActivityId())
                 .targetCount(tradeSettlementRuleFilterBackEntity.getTargetCount())
                 .completeCount(tradeSettlementRuleFilterBackEntity.getCompleteCount())
@@ -58,7 +59,7 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
                 .status(tradeSettlementRuleFilterBackEntity.getStatus())
                 .validStartTime(tradeSettlementRuleFilterBackEntity.getValidStartTime())
                 .validEndTime(tradeSettlementRuleFilterBackEntity.getValidEndTime())
-                .notifyUrl(tradeSettlementRuleFilterBackEntity.getNotifyUrl())
+                .notifyConfigVO(tradeSettlementRuleFilterBackEntity.getNotifyConfig())
                 .build();
 
         GroupBuyTeamSettlementAggregate groupBuyTeamSettlementAggregate = GroupBuyTeamSettlementAggregate.builder()
@@ -68,12 +69,23 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
                 .build();
 
         //拼团交易结算
-        boolean isNotify = repository.settlementMarketPayOrder(groupBuyTeamSettlementAggregate);
+        NotifyTaskEntity notifyTaskEntity = repository.settlementMarketPayOrder(groupBuyTeamSettlementAggregate);
 
         // 5. 组队回调处理 - 处理失败也会有定时任务补偿，通过这样的方式，可以减轻任务调度，提高时效性
-        if (isNotify) {
-            Map<String, Integer> notifyResultMap = execSettlementNotifyJob(teamId);
-            log.info("回调通知拼团完结 result:{}", JSON.toJSONString(notifyResultMap));
+        if (null != notifyTaskEntity) {
+            try {
+                threadPoolExecutor.execute(() -> {
+                    try {
+                        Map<String, Integer> result = execSettlementNotifyJob(notifyTaskEntity);
+                        log.info("回调通知拼团完结 result:{}", JSON.toJSONString(result));
+                    } catch (Exception e) {
+                        log.error("拼团通知即时执行失败，等待定时补偿 teamId:{}", notifyTaskEntity.getTeamId(), e);
+                    }
+                });
+            } catch (RejectedExecutionException e) {
+                log.warn("拼团通知线程池繁忙，等待定时补偿 teamId:{}", notifyTaskEntity.getTeamId(), e);
+            }
+
         }
         return TradePaySettlementEntity.builder()
                 .source(tradePaySuccessEntity.getSource())
@@ -96,18 +108,26 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
 
     }
 
-    private @NonNull Map<String, Integer> execSettlementNotifyJob(List<NotifyTaskEntity> notifyTaskEntityList) throws Exception {
+    private Map<String, Integer> execSettlementNotifyJob(List<NotifyTaskEntity> notifyTaskEntityList) throws Exception {
         int successCount = 0,errorCount = 0,retryCount = 0;
 
         for (NotifyTaskEntity notifyTaskEntity : notifyTaskEntityList) {
-            String response = port.groupBuyNotify(notifyTaskEntity);
+            String response;
+            try {
+                response = port.groupBuyNotify(notifyTaskEntity);
+            } catch (Exception e) {
+                log.error("拼团通知失败 teamId:{}", notifyTaskEntity.getTeamId(), e);
+                response = NotifyTaskHTTPEnumVO.ERROR.getCode();
+            }
+            // 未抢到锁，本轮不计为发送失败。其他非 success 返回均按失败处理。
+            if (response == null) continue;
             if (NotifyTaskHTTPEnumVO.SUCCESS.getCode().equals(response)) {
                 int updateCount = repository.updateNotifyStatusSuccess(notifyTaskEntity.getTeamId());
                 if (1 == updateCount){
                     successCount +=1;
                 }
-            } else if (NotifyTaskHTTPEnumVO.ERROR.getCode().equals(response)) {
-                if (notifyTaskEntity.getNotifyCount()<5){
+            } else {
+                if (notifyTaskEntity.getNotifyCount() == null || notifyTaskEntity.getNotifyCount() < 4){
                     int updateCount = repository.updateNotifyStatusRetry(notifyTaskEntity.getTeamId());
                     if (1 == updateCount){
                         retryCount +=1;
@@ -139,5 +159,11 @@ public class TradeSettlementOrderService implements ITradeSettlementOrderService
         List<NotifyTaskEntity> notifyTaskEntities = repository.queryUnExecuteNotifyTaskList(teamId);
         return execSettlementNotifyJob(notifyTaskEntities);
 
+    }
+
+    @Override
+    public Map<String, Integer> execSettlementNotifyJob(NotifyTaskEntity notifyTaskEntity) throws Exception {
+        log.info("拼团交易-执行结算通知回调，指定 teamId:{} notifyTaskEntity:{}", notifyTaskEntity.getTeamId(), JSON.toJSONString(notifyTaskEntity));
+        return execSettlementNotifyJob(Collections.singletonList(notifyTaskEntity));
     }
 }

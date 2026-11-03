@@ -28,10 +28,12 @@ public class GroupBuyNotifyService {
                     .build();
 
             // 2. 调用接口
-            Response response = okHttpClient.newCall(request).execute();
-
-            // 3. 返回结果
-            return response.body().string();
+            try (Response response = okHttpClient.newCall(request).execute()) {
+                if (!response.isSuccessful() || response.body() == null) {
+                    throw new AppException(ResponseCode.HTTP_EXCEPTION);
+                }
+                return response.body().string().trim();
+            }
 
         }catch (Exception e){
             throw new AppException(ResponseCode.HTTP_EXCEPTION);

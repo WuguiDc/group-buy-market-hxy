@@ -1,6 +1,16 @@
 server:
   port: 8091
 
+  tomcat:
+    mbeanregistry:
+      enabled: true
+    max-connections: 20 # 最大连接数
+    threads:
+      max: 20         # 设定处理客户请求的线程的最大数目，决定了服务器可以同时响应客户请求的数,默认200
+      min-spare: 10   # 初始化线程数,最小空闲线程数,默认是10
+    accept-count: 10  # 等待队列长度
+
+
 # 线程池配置
 thread:
   pool:
@@ -17,7 +27,7 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://127.0.0.1:13306/group_buy_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+    url: jdbc:mysql://127.0.0.1:13306/group_buy_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true&sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES'
     driver-class-name: com.mysql.cj.jdbc.Driver
   hikari:
     pool-name: Retail_HikariCP
@@ -75,6 +85,33 @@ redis:
       ping-interval: 60000
       keep-alive: true
 
+# 扳手工程；通用配置组件「配置中心、设计模式框架、限流服务」
+xfg:
+  wrench:
+    config:
+      system: group-buy-market
+      register:
+        host: ${redis.sdk.config.host:127.0.0.1}
+        port: ${redis.sdk.config.port:16379}
+
+logstash:
+  host:127.0.0.1
+
+# 监控配置 Prometheus + Grafana
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露所有端点，包括自定义端点
+  endpoint:
+    health:
+      show-details: always # 显示详细的健康检查信息
+  metrics:
+    export:
+      prometheus:
+        enabled: true # 启用Prometheus
+  prometheus:
+    enabled: true # 启用Prometheus端点
 
 # 日志
 logging:

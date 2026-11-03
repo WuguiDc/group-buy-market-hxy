@@ -1,5 +1,6 @@
 package com.hxy.domain.trade.model.entity;
 
+import com.hxy.domain.trade.model.valobj.NotifyConfigVO;
 import com.hxy.types.enums.GroupBuyOrderEnumVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,6 +32,6 @@ public class TradeSettlementRuleFilterBackEntity {
     /** 拼团结束时间 - 拼团有效时长 */
     private Date validEndTime;
     /** 回调通知地址 */
-    private String notifyUrl;
+    private NotifyConfigVO notifyConfig;
 
 }

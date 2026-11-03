@@ -1,0 +1,198 @@
+{
+  "window": {
+    "start": "2026-10-26T11:52:50Z",
+    "end": "2026-11-02T11:52:50Z"
+  },
+  "timezone": "Asia/Shanghai",
+  "datasourceUid": "PBFA97CFB590B2093",
+  "summary": {
+    "stats": {
+      "current_up": 1,
+      "sample_count": 129,
+      "successful_scrapes": 80,
+      "process_start": 1793619217.835,
+      "uptime_seconds": 1145.059,
+      "process_cpu_avg": 0.005163311886879855,
+      "process_cpu_max": 0.012342164628757167,
+      "system_cpu_avg": 0.0973516000866833,
+      "system_cpu_max": 0.46055558616672615,
+      "heap_used_current": 129783480,
+      "heap_max": 8506572800,
+      "heap_used_peak": 392365616,
+      "nonheap_used_current": 98184176,
+      "threads_current": 98,
+      "threads_max": 101,
+      "blocked_threads_max": 1,
+      "http_count_current": 83,
+      "http_increase": 82.55833956819154,
+      "http_avg_seconds": 0.12430741884925263,
+      "http_max_seconds": 0.3117947,
+      "db_pending_max": 0,
+      "db_active_max": 0,
+      "db_timeout_total": 0,
+      "gc_pause_increase": 0.018236428056359652,
+      "gc_pause_max": 0.093,
+      "resets": 0
+    },
+    "appFirst": "2026-11-02 19:21:59",
+    "appLast": "2026-11-02 19:52:42",
+    "appFirstUp": "2026-11-02 19:33:45",
+    "promFirst": "2026-11-02 19:21:57",
+    "promLast": "2026-11-02 19:52:39",
+    "processStart": "2026-11-02 19:33:37",
+    "sampleSuccessPct": 62.01550387596899,
+    "heapMiB": 123.77117156982422,
+    "heapPeakMiB": 374.1890106201172,
+    "heapMaxGiB": 7.92236328125,
+    "heapRatio": 1.5256847034801135,
+    "heapPeakRatio": 4.61249936049451,
+    "diskFreeGiB": 78.62730407714844,
+    "diskFreePct": 26.20910169231544,
+    "fromMs": 1793015570000,
+    "toMs": 1793620370000
+  },
+  "statExpressions": {
+    "current_up": "up{job=\"group-buy-market-app\"}",
+    "sample_count": "count_over_time(up{job=\"group-buy-market-app\"}[7d])",
+    "successful_scrapes": "sum_over_time(up{job=\"group-buy-market-app\"}[7d])",
+    "process_start": "process_start_time_seconds{job=\"group-buy-market-app\"}",
+    "uptime_seconds": "process_uptime_seconds{job=\"group-buy-market-app\"}",
+    "process_cpu_avg": "avg_over_time(process_cpu_usage{job=\"group-buy-market-app\"}[7d])",
+    "process_cpu_max": "max_over_time(process_cpu_usage{job=\"group-buy-market-app\"}[7d])",
+    "system_cpu_avg": "avg_over_time(system_cpu_usage{job=\"group-buy-market-app\"}[7d])",
+    "system_cpu_max": "max_over_time(system_cpu_usage{job=\"group-buy-market-app\"}[7d])",
+    "heap_used_current": "sum(jvm_memory_used_bytes{job=\"group-buy-market-app\",area=\"heap\"})",
+    "heap_max": "sum(jvm_memory_max_bytes{job=\"group-buy-market-app\",area=\"heap\"})",
+    "heap_used_peak": "max_over_time((sum(jvm_memory_used_bytes{job=\"group-buy-market-app\",area=\"heap\"}))[7d:15s])",
+    "nonheap_used_current": "sum(jvm_memory_used_bytes{job=\"group-buy-market-app\",area=\"nonheap\"})",
+    "threads_current": "jvm_threads_live_threads{job=\"group-buy-market-app\"}",
+    "threads_max": "max_over_time(jvm_threads_live_threads{job=\"group-buy-market-app\"}[7d])",
+    "blocked_threads_max": "max_over_time(jvm_threads_states_threads{job=\"group-buy-market-app\",state=\"blocked\"}[7d])",
+    "http_count_current": "sum(http_server_requests_seconds_count{job=\"group-buy-market-app\"})",
+    "http_increase": "sum(increase(http_server_requests_seconds_count{job=\"group-buy-market-app\"}[7d]))",
+    "http_5xx_increase": "sum(increase(http_server_requests_seconds_count{job=\"group-buy-market-app\",status=~\"5..\"}[7d]))",
+    "http_avg_seconds": "sum(increase(http_server_requests_seconds_sum{job=\"group-buy-market-app\"}[7d])) / sum(increase(http_server_requests_seconds_count{job=\"group-buy-market-app\"}[7d]))",
+    "http_max_seconds": "max(max_over_time(http_server_requests_seconds_max{job=\"group-buy-market-app\"}[7d]))",
+    "db_pending_max": "max(max_over_time(hikaricp_connections_pending{job=\"group-buy-market-app\"}[7d]))",
+    "db_active_max": "max(max_over_time(hikaricp_connections_active{job=\"group-buy-market-app\"}[7d]))",
+    "db_timeout_total": "sum(hikaricp_connections_timeout_total{job=\"group-buy-market-app\"})",
+    "gc_pause_increase": "sum(increase(jvm_gc_pause_seconds_sum{job=\"group-buy-market-app\"}[7d]))",
+    "gc_pause_max": "max(max_over_time(jvm_gc_pause_seconds_max{job=\"group-buy-market-app\"}[7d]))",
+    "resets": "resets(process_uptime_seconds{job=\"group-buy-market-app\"}[7d])"
+  },
+  "queries": {
+    "stats": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{\"__name__\":\"up\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"current_up\"},\"value\":[1793620370,\"1\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"sample_count\"},\"value\":[1793620370,\"129\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"successful_scrapes\"},\"value\":[1793620370,\"80\"]},{\"metric\":{\"__name__\":\"process_start_time_seconds\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"process_start\"},\"value\":[1793620370,\"1793619217.835\"]},{\"metric\":{\"__name__\":\"process_uptime_seconds\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"uptime_seconds\"},\"value\":[1793620370,\"1145.059\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"process_cpu_avg\"},\"value\":[1793620370,\"0.005163311886879855\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"process_cpu_max\"},\"value\":[1793620370,\"0.012342164628757167\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"system_cpu_avg\"},\"value\":[1793620370,\"0.0973516000866833\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"system_cpu_max\"},\"value\":[1793620370,\"0.46055558616672615\"]},{\"metric\":{\"stat\":\"heap_used_current\"},\"value\":[1793620370,\"129783480\"]},{\"metric\":{\"stat\":\"heap_max\"},\"value\":[1793620370,\"8506572800\"]},{\"metric\":{\"stat\":\"heap_used_peak\"},\"value\":[1793620370,\"392365616\"]},{\"metric\":{\"stat\":\"nonheap_used_current\"},\"value\":[1793620370,\"98184176\"]},{\"metric\":{\"__name__\":\"jvm_threads_live_threads\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"threads_current\"},\"value\":[1793620370,\"98\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"threads_max\"},\"value\":[1793620370,\"101\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"blocked_threads_max\",\"state\":\"blocked\"},\"value\":[1793620370,\"1\"]},{\"metric\":{\"stat\":\"http_count_current\"},\"value\":[1793620370,\"83\"]},{\"metric\":{\"stat\":\"http_increase\"},\"value\":[1793620370,\"82.55833956819154\"]},{\"metric\":{\"stat\":\"http_avg_seconds\"},\"value\":[1793620370,\"0.12430741884925263\"]},{\"metric\":{\"stat\":\"http_max_seconds\"},\"value\":[1793620370,\"0.3117947\"]},{\"metric\":{\"stat\":\"db_pending_max\"},\"value\":[1793620370,\"0\"]},{\"metric\":{\"stat\":\"db_active_max\"},\"value\":[1793620370,\"0\"]},{\"metric\":{\"stat\":\"db_timeout_total\"},\"value\":[1793620370,\"0\"]},{\"metric\":{\"stat\":\"gc_pause_increase\"},\"value\":[1793620370,\"0.018236428056359652\"]},{\"metric\":{\"stat\":\"gc_pause_max\"},\"value\":[1793620370,\"0.093\"]},{\"metric\":{\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"stat\":\"resets\"},\"value\":[1793620370,\"0\"]}]"
+        }
+      ]
+    },
+    "httpByRoute": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{\"method\":\"GET\",\"status\":\"404\",\"uri\":\"/**\"},\"value\":[1793620370,\"1\"]},{\"metric\":{\"method\":\"GET\",\"status\":\"200\",\"uri\":\"/actuator/prometheus\"},\"value\":[1793620370,\"82\"]}]"
+        }
+      ]
+    },
+    "logsDbDisk": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{\"__name__\":\"logback_events_total\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"level\":\"debug\"},\"value\":[1793620370,\"0\"]},{\"metric\":{\"__name__\":\"logback_events_total\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"level\":\"error\"},\"value\":[1793620370,\"0\"]},{\"metric\":{\"__name__\":\"logback_events_total\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"level\":\"info\"},\"value\":[1793620370,\"167\"]},{\"metric\":{\"__name__\":\"logback_events_total\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"level\":\"trace\"},\"value\":[1793620370,\"0\"]},{\"metric\":{\"__name__\":\"logback_events_total\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"level\":\"warn\"},\"value\":[1793620370,\"0\"]},{\"metric\":{\"__name__\":\"disk_free_bytes\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"path\":\"D:\\\\code_java_2026_6\\\\group-buy-market-hxy\\\\.\"},\"value\":[1793620370,\"84425424896\"]},{\"metric\":{\"__name__\":\"hikaricp_connections_max\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"pool\":\"HikariPool-1\"},\"value\":[1793620370,\"10\"]},{\"metric\":{\"__name__\":\"jvm_gc_pause_seconds_count\",\"action\":\"end of major GC\",\"app\":\"group-buy-market-app\",\"cause\":\"Metadata GC Threshold\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\"},\"value\":[1793620370,\"1\"]},{\"metric\":{\"__name__\":\"jvm_gc_pause_seconds_count\",\"action\":\"end of minor GC\",\"app\":\"group-buy-market-app\",\"cause\":\"Allocation Failure\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\"},\"value\":[1793620370,\"2\"]},{\"metric\":{\"__name__\":\"jvm_gc_pause_seconds_count\",\"action\":\"end of minor GC\",\"app\":\"group-buy-market-app\",\"cause\":\"Metadata GC Threshold\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\"},\"value\":[1793620370,\"1\"]}]"
+        }
+      ]
+    },
+    "rawUp": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{\"__name__\":\"up\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\"},\"values\":[[1793618519.762,\"0\"],[1793618534.762,\"0\"],[1793618548.679,\"0\"],[1793618563.677,\"0\"],[1793618577.466,\"0\"],[1793618592.463,\"0\"],[1793618606.337,\"0\"],[1793618621.321,\"0\"],[1793618635.113,\"0\"],[1793618650.113,\"0\"],[1793618663.892,\"0\"],[1793618678.893,\"0\"],[1793618692.659,\"0\"],[1793618707.659,\"0\"],[1793618721.496,\"0\"],[1793618736.487,\"0\"],[1793618750.256,\"0\"],[1793618765.262,\"0\"],[1793618779.07,\"0\"],[1793618794.066,\"0\"],[1793618807.808,\"0\"],[1793618822.819,\"0\"],[1793618836.57,\"0\"],[1793618851.577,\"0\"],[1793618866.104,\"0\"],[1793618879.804,\"0\"],[1793618894.235,\"0\"],[1793618909.224,\"0\"],[1793618922.997,\"0\"],[1793618937.997,\"0\"],[1793618951.777,\"0\"],[1793618966.77,\"0\"],[1793618980.53,\"0\"],[1793618995.528,\"0\"],[1793619009.268,\"0\"],[1793619024.266,\"0\"],[1793619038.088,\"0\"],[1793619053.081,\"0\"],[1793619066.825,\"0\"],[1793619081.827,\"0\"],[1793619095.632,\"0\"],[1793619110.623,\"0\"],[1793619124.378,\"0\"],[1793619139.368,\"0\"],[1793619153.873,\"0\"],[1793619167.526,\"0\"],[1793619181.973,\"0\"],[1793619196.963,\"0\"],[1793619211.448,\"0\"],[1793619225.139,\"1\"],[1793619239.541,\"1\"],[1793619254.538,\"1\"],[1793619268.315,\"1\"],[1793619283.322,\"1\"],[1793619297.107,\"1\"],[1793619312.108,\"1\"],[1793619325.832,\"1\"],[1793619340.826,\"1\"],[1793619354.607,\"1\"],[1793619369.605,\"1\"],[1793619383.358,\"1\"],[1793619398.359,\"1\"],[1793619412.88,\"1\"],[1793619426.55,\"1\"],[1793619440.978,\"1\"],[1793619455.977,\"1\"],[1793619469.78,\"1\"],[1793619484.783,\"1\"],[1793619498.537,\"1\"],[1793619513.533,\"1\"],[1793619527.286,\"1\"],[1793619542.286,\"1\"],[1793619556.074,\"1\"],[1793619571.075,\"1\"],[1793619584.807,\"1\"],[1793619599.804,\"1\"],[1793619614.266,\"1\"],[1793619627.958,\"1\"],[1793619642.332,\"1\"],[1793619657.338,\"1\"],[1793619671.082,\"1\"],[1793619686.096,\"1\"],[1793619699.847,\"1\"],[1793619714.844,\"1\"],[1793619728.595,\"1\"],[1793619743.611,\"1\"],[1793619758.095,\"1\"],[1793619771.76,\"1\"],[1793619786.149,\"1\"],[1793619801.149,\"1\"],[1793619814.908,\"1\"],[1793619829.912,\"1\"],[1793619843.645,\"1\"],[1793619858.648,\"1\"],[1793619872.405,\"1\"],[1793619887.394,\"1\"],[1793619901.12,\"1\"],[1793619916.123,\"1\"],[1793619929.883,\"1\"],[1793619944.883,\"1\"],[1793619958.601,\"1\"],[1793619973.608,\"1\"],[1793619988.074,\"1\"],[1793620003.078,\"1\"],[1793620016.955,\"1\"],[1793620031.982,\"1\"],[1793620045.816,\"1\"],[1793620060.804,\"1\"],[1793620074.411,\"1\"],[1793620089.411,\"1\"],[1793620103.178,\"1\"],[1793620118.179,\"1\"],[1793620132.059,\"1\"],[1793620147.051,\"1\"],[1793620160.844,\"1\"],[1793620175.849,\"1\"],[1793620189.626,\"1\"],[1793620204.628,\"1\"],[1793620218.417,\"1\"],[1793620233.41,\"1\"],[1793620247.187,\"1\"],[1793620262.186,\"1\"],[1793620275.949,\"1\"],[1793620290.951,\"1\"],[1793620304.729,\"1\"],[1793620319.729,\"1\"],[1793620333.493,\"1\"],[1793620348.485,\"1\"],[1793620362.261,\"1\"]]},{\"metric\":{\"__name__\":\"up\",\"instance\":\"prometheus:9090\",\"job\":\"prometheus\"},\"values\":[[1793618517.007,\"1\"],[1793618532.007,\"1\"],[1793618545.933,\"1\"],[1793618560.929,\"1\"],[1793618574.711,\"1\"],[1793618589.709,\"1\"],[1793618603.568,\"1\"],[1793618618.565,\"1\"],[1793618632.359,\"1\"],[1793618647.357,\"1\"],[1793618661.139,\"1\"],[1793618676.136,\"1\"],[1793618689.906,\"1\"],[1793618704.907,\"1\"],[1793618718.738,\"1\"],[1793618733.728,\"1\"],[1793618747.513,\"1\"],[1793618762.506,\"1\"],[1793618776.313,\"1\"],[1793618791.315,\"1\"],[1793618805.051,\"1\"],[1793618820.064,\"1\"],[1793618833.828,\"1\"],[1793618848.816,\"1\"],[1793618863.353,\"1\"],[1793618877.056,\"1\"],[1793618891.472,\"1\"],[1793618906.476,\"1\"],[1793618920.241,\"1\"],[1793618935.241,\"1\"],[1793618949.014,\"1\"],[1793618964.017,\"1\"],[1793618977.771,\"1\"],[1793618992.779,\"1\"],[1793619006.512,\"1\"],[1793619021.514,\"1\"],[1793619035.322,\"1\"],[1793619050.323,\"1\"],[1793619064.077,\"1\"],[1793619079.071,\"1\"],[1793619092.868,\"1\"],[1793619107.86,\"1\"],[1793619121.621,\"1\"],[1793619136.617,\"1\"],[1793619151.109,\"1\"],[1793619164.772,\"1\"],[1793619179.213,\"1\"],[1793619194.215,\"1\"],[1793619208.689,\"1\"],[1793619222.398,\"1\"],[1793619236.795,\"1\"],[1793619251.792,\"1\"],[1793619265.571,\"1\"],[1793619280.562,\"1\"],[1793619294.354,\"1\"],[1793619309.354,\"1\"],[1793619323.073,\"1\"],[1793619338.072,\"1\"],[1793619351.844,\"1\"],[1793619366.84,\"1\"],[1793619380.603,\"1\"],[1793619395.603,\"1\"],[1793619410.126,\"1\"],[1793619423.797,\"1\"],[1793619438.229,\"1\"],[1793619453.225,\"1\"],[1793619467.034,\"1\"],[1793619482.026,\"1\"],[1793619495.787,\"1\"],[1793619510.786,\"1\"],[1793619524.538,\"1\"],[1793619539.536,\"1\"],[1793619553.321,\"1\"],[1793619568.318,\"1\"],[1793619582.05,\"1\"],[1793619597.052,\"1\"],[1793619611.511,\"1\"],[1793619625.183,\"1\"],[1793619639.58,\"1\"],[1793619654.574,\"1\"],[1793619668.324,\"1\"],[1793619683.323,\"1\"],[1793619697.099,\"1\"],[1793619712.097,\"1\"],[1793619725.842,\"1\"],[1793619740.847,\"1\"],[1793619755.339,\"1\"],[1793619769.008,\"1\"],[1793619783.4,\"1\"],[1793619798.399,\"1\"],[1793619812.154,\"1\"],[1793619827.162,\"1\"],[1793619840.898,\"1\"],[1793619855.914,\"1\"],[1793619869.644,\"1\"],[1793619884.644,\"1\"],[1793619898.367,\"1\"],[1793619913.363,\"1\"],[1793619927.132,\"1\"],[1793619942.137,\"1\"],[1793619955.844,\"1\"],[1793619970.846,\"1\"],[1793619985.326,\"1\"],[1793620000.311,\"1\"],[1793620014.203,\"1\"],[1793620029.198,\"1\"],[1793620043.049,\"1\"],[1793620058.043,\"1\"],[1793620071.658,\"1\"],[1793620086.702,\"1\"],[1793620100.412,\"1\"],[1793620115.415,\"1\"],[1793620129.301,\"1\"],[1793620144.295,\"1\"],[1793620158.088,\"1\"],[1793620173.093,\"1\"],[1793620186.874,\"1\"],[1793620201.874,\"1\"],[1793620215.657,\"1\"],[1793620230.656,\"1\"],[1793620244.435,\"1\"],[1793620259.436,\"1\"],[1793620273.193,\"1\"],[1793620288.198,\"1\"],[1793620301.976,\"1\"],[1793620316.972,\"1\"],[1793620330.731,\"1\"],[1793620345.733,\"1\"],[1793620359.508,\"1\"]]}]"
+        }
+      ]
+    },
+    "heapSeries": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{},\"values\":[[1793619230,\"296778000\"],[1793619245,\"305163392\"],[1793619260,\"309976472\"],[1793619275,\"316611352\"],[1793619290,\"327984392\"],[1793619305,\"329780072\"],[1793619320,\"330977392\"],[1793619335,\"332226024\"],[1793619350,\"332858944\"],[1793619365,\"334056064\"],[1793619380,\"335253184\"],[1793619395,\"335851744\"],[1793619410,\"337750560\"],[1793619425,\"338385544\"],[1793619440,\"339617024\"],[1793619455,\"340814144\"],[1793619470,\"342609824\"],[1793619485,\"343208480\"],[1793619500,\"344405600\"],[1793619515,\"345602720\"],[1793619530,\"353384112\"],[1793619545,\"354684184\"],[1793619560,\"355881304\"],[1793619575,\"357164216\"],[1793619590,\"358960160\"],[1793619605,\"359558720\"],[1793619620,\"360755840\"],[1793619635,\"361354400\"],[1793619650,\"362551520\"],[1793619665,\"363748640\"],[1793619680,\"364347296\"],[1793619695,\"365683712\"],[1793619710,\"366915144\"],[1793619725,\"367616640\"],[1793619740,\"368813760\"],[1793619755,\"369412320\"],[1793619770,\"370643800\"],[1793619785,\"372439480\"],[1793619800,\"374235328\"],[1793619815,\"375466760\"],[1793619830,\"377963968\"],[1793619845,\"378049744\"],[1793619860,\"379349800\"],[1793619875,\"380546920\"],[1793619890,\"381744040\"],[1793619905,\"382992616\"],[1793619920,\"383591176\"],[1793619935,\"385421168\"],[1793619950,\"387268312\"],[1793619965,\"387918336\"],[1793619980,\"389816960\"],[1793619995,\"391065544\"],[1793620010,\"392365616\"],[1793620025,\"84741328\"],[1793620040,\"89553848\"],[1793620055,\"92658864\"],[1793620070,\"97670096\"],[1793620085,\"100702032\"],[1793620100,\"102980896\"],[1793620115,\"104371712\"],[1793620130,\"105764528\"],[1793620145,\"112265792\"],[1793620160,\"112918352\"],[1793620175,\"113862160\"],[1793620190,\"116341256\"],[1793620205,\"117290848\"],[1793620220,\"117784232\"],[1793620235,\"118718768\"],[1793620250,\"119652816\"],[1793620265,\"120610512\"],[1793620280,\"121079904\"],[1793620295,\"122250616\"],[1793620310,\"123654056\"],[1793620325,\"125039840\"],[1793620340,\"126002440\"],[1793620355,\"128390088\"],[1793620370,\"129783480\"]]}]"
+        }
+      ]
+    },
+    "missingApplicationLabel": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ]
+    },
+    "dbCurrent": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{\"__name__\":\"hikaricp_connections\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"pool\":\"HikariPool-1\"},\"value\":[1793620370,\"10\"]},{\"metric\":{\"__name__\":\"tomcat_threads_busy_threads\",\"app\":\"group-buy-market-app\",\"instance\":\"host.docker.internal:8091\",\"job\":\"group-buy-market-app\",\"name\":\"http-nio-8091\"},\"value\":[1793620370,\"1\"]}]"
+        }
+      ]
+    },
+    "gcPauseTotals": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{},\"value\":[1793620370,\"0.125\"]}]"
+        }
+      ]
+    },
+    "businessRequests": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ]
+    },
+    "prometheusStart": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"metric\":{\"__name__\":\"process_start_time_seconds\",\"instance\":\"prometheus:9090\",\"job\":\"prometheus\"},\"value\":[1793620370,\"1793618424.66\"]}]"
+        }
+      ]
+    }
+  },
+  "dataSources": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"id\":1,\"uid\":\"PBFA97CFB590B2093\",\"name\":\"Prometheus\",\"type\":\"prometheus\",\"isDefault\":true}]"
+        }
+      ]
+    }
+  },
+  "dashboards": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[{\"id\":4,\"permanentlyDeleteDate\":\"0001-01-01T00:00:00.000Z\",\"tags\":[],\"title\":\"JVM (Micrometer)\",\"type\":\"dash-db\",\"uid\":\"d26890e8-8a26-4b9e-9a9d-dc30cd795aba\",\"uri\":\"db/jvm-micrometer\",\"url\":\"/d/d26890e8-8a26-4b9e-9a9d-dc30cd795aba/jvm-micrometer\"},{\"id\":5,\"permanentlyDeleteDate\":\"0001-01-01T00:00:00.000Z\",\"tags\":[],\"title\":\"New dashboard\",\"type\":\"dash-db\",\"uid\":\"e29cf710-aec2-4031-b5d4-c39d0fb7646e\",\"uri\":\"db/new-dashboard\",\"url\":\"/d/e29cf710-aec2-4031-b5d4-c39d0fb7646e/new-dashboard\"}]"
+        }
+      ]
+    }
+  },
+  "alertRules": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "[]"
+        }
+      ]
+    }
+  }
+}

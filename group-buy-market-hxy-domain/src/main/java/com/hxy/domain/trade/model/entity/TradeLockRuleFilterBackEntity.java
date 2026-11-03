@@ -14,4 +14,7 @@ public class TradeLockRuleFilterBackEntity {
 
     private Integer userTakeOrderCount;
 
+    /** 恢复组队库存缓存 key */
+    private String recoveryTeamStockKey;
+
 }
